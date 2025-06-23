@@ -133,4 +133,4 @@ getgenv().Config = {
     }
 }
 setfpscap(getgenv().Config["FPS"] or 3)
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/791a1cc069605b60b85413847f6e5d2f.lua"))(
+loadstring(game:HttpGet("https://raw.githubusercontent.com/k7n7/GAG/refs/heads/main/LoukANCUT"))()
