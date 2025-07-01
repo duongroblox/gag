@@ -1,153 +1,37 @@
-getgenv().ConfigsKaitun = {
-    ["Stack Plant"] = true,
-    ["Low Cpu"] = true,
-    
-    ["Limit Tree"] = {
-        ["Limit"] = 400,
-        ["Destroy Untill"] = 350,
-        
-        ["Safe Tree"] = {
-            "Moon Blossom"
-        }
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+setfpscap(3)
+wait(20)
+script_key = "WrKjcZGZMlXZEoqrXtzfguYSBErdhxMB";
+getgenv().UserConfig = {
+    ["Buy Seed"] = {"Sugar Apple", "Pitcher Plant", "Feijoa", "Loquat", "Prickly Pear", "Bell Pepper", "Kiwi", "Pineapple", "Banana", "Avocado", "Green Apple", "Rafflesia", "Watermelon", "Cauliflower", "Tomato", "Blueberry", "Strawberry", "Carrot"},
+    ["Plant Seed"] = {},
+    ["Limit Plants"] = 250,
+    ["Buy Gear"] = {"Basic Sprinkler", "Advanced Sprinkler", "Godly Sprinkler"},
+    ["Buy Egg"] = {"Paradise Egg","Bug Egg"},
+    ["Place Egg"] = {"Oasis Egg", "Paradise Egg", "Bug Egg", "Night Egg"},
+    ["Pet Dont Delete"] = {"Hyacinth Macaw", "Fennec Fox", "Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus","Kiwi","Blood Kiwi","Rooster","Chicken"},
+    ["Rarity Dont Delete"] = {
+        ["Common"] = "10kg",
+        ["Uncommon"] = "10kg",
+        ["Rare"] = "10kg",
+        ["Legendary"] = "10kg",
+        ["Mythical"] = "0.1kg",
+        ["Divine"] = "0.1kg"
     },
-
-    Seed = {
-        Buy = {
-            Mode = "Auto", -- Custom , Auto
-            Custom = {
-                "Carrot",
-                "Bamboo",
-                "Pumpkin",
-                "Daffodil",
-                "Orange Tulip",
-                "Watermelon",
-                "Mushroom",
-                "Nightshade",
-                "Beanstalk",
-            }
-        },
-        Place = {
-            Mode = "Lock", -- Select , Lock
-            Select = {
-                "Carrot"
-            },
-            Lock = {
-                "Sunflower",
-                "Elephant Ears",
-                "Dragon Pepper",
-            }
-        }
+    ["Equip Pets"] = {"Moth","Blood Kiwi","Rooster","Chicken", "Seal", "Hamster"},
+    ["Feed Pets"] = {"Carrot", "Strawberry", "Blueberry", "Tomato"},
+    ["Buy Event Shop"] = {"Oasis Egg", "Hamster"},
+    ["Ping Pets"] = {"Hyacinth Macaw", "Fennec Fox", "Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus"},
+    ["Ping Rarity"] = {
+        ["Common"] = "10kg",
+        ["Uncommon"] = "10kg",
+        ["Rare"] = "10kg",
+        ["Legendary"] = "10kg",
+        ["Mythical"] = "0.1kg",
+        ["Divine"] = "0.1kg"
     },
-    
-    ["Seed Pack"] = {
-        Locked = {
-            
-        }
-    },
-    
-    Events = {
-        ["Summer Harvest"] = {
-            ["Do At Money"] = 1000000,
-            ["Point Limit"] = 15000,
-        },
-        Craft = {
-            "Crafters Seed Pack",
-            "Anti Bee Egg"
-        },
-        Shop = {
-            --"Traveler's Fruit",
-            "Hamster",
-            "Oasis Egg",
-        }
-    },
-    
-    Gear = {
-        Buy = { 
-            "Master Sprinkler",
-            "Godly Sprinkler",
-            "Advanced Sprinkler"
-        },
-        Lock = {
-
-        },
-    },
-
-    Eggs = {
-        Place = {
-            "Anti Bee Egg",
-            "Oasis Egg",
-            "Paradise Egg",
-            "Bug Egg",
-            "Night Egg",
-        },
-        Buy = {
-            "Paradise Egg",
-            "Night Egg",
-            "Bug Egg",
-            "Oasis Egg",
-        }
-    },
-    
-    Pets = {
-        ["Upgrade Slot"] = {
-            ["Pet"] = {
-                
-            },
-            ["Limit Upgrade"] = 5,
-            ["Equip When Done"] = {
-                "Blood Kiwi",
-		"Hamster",
-		"Moth",
-		"Peacock",
-                "Chicken"
-            },
-        },
-        Locked = {
-            "Disco Bee",
-            "Butterfly",
-            "Mimic Octopus",
-            "Hyacinth Macaw",
-            "Axolotl",
-            "Moth",
-            "Hamster",
-            "Queen Bee",
-            "Dragonfly",
-            "Raccoon",
-            "Red Fox",
-            "Blood Owl",
-            "Blood Kiwi",
-	    "Sand Snake",
-	    "Meerkat",
-            ["Chicken"] = 5,
-        }
-    },
-
-    Webhook = {
-        UrlPet = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
-        UrlSeed = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
-        PcName = "dew",
-        
-        Noti = {
-            Seeds = {
-                "Sunflower",
-                "Dragon Pepper",
-                "Elephant Ears",
-            },
-            SeedPack = {
-                "Idk"
-            },
-            Pets = {
-                "Disco Bee",
-                "Butterfly",
-                "Mimic Octopus",
-                "Hyacinth Macaw",
-                "Queen Bee",
-                "Dragonfly",
-                "Raccoon",
-                "Red Fox",
-            },
-        }
-    },
+    ["Webhook Url"] = "https://discord.com/api/webhooks/1381688724944851115/0LrW-xclbFyqXZmWFCKOKCpx9Qq1bzmg2tomJJEJz15evbs1_mfxR80pXo_IaxmrwQNo",
+    ["Discord ID"] = "473755357274046464",
+    ["Note Webhook"] = "Dew",
 }
-License = "5wxY3aTfQIjbPtwsHhwvg78klCY6Fivm"
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5d72b6c5490cf8154f848cbae856f3c.lua"))()
