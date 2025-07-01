@@ -7,7 +7,7 @@ getgenv().UserConfig = {
     ["Plant Seed"] = {},
     ["Limit Plants"] = 250,
     ["Buy Gear"] = {"Basic Sprinkler", "Advanced Sprinkler", "Godly Sprinkler"},
-    ["Buy Egg"] = {"Paradise Egg","Bug Egg"},
+    ["Buy Egg"] = {"Paradise Egg","Bug Egg","Uncommon Egg", "Rare Summer Egg","Common Summer Egg", "Rare Egg"},
     ["Place Egg"] = {"Oasis Egg", "Paradise Egg", "Bug Egg", "Night Egg"},
     ["Pet Dont Delete"] = {"Hyacinth Macaw", "Fennec Fox", "Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus","Kiwi","Blood Kiwi","Rooster","Chicken"},
     ["Rarity Dont Delete"] = {
@@ -18,7 +18,7 @@ getgenv().UserConfig = {
         ["Mythical"] = "0.1kg",
         ["Divine"] = "0.1kg"
     },
-    ["Equip Pets"] = {"Moth","Blood Kiwi","Rooster","Chicken", "Seal", "Hamster"},
+    ["Equip Pets"] = {"Kiwi", "Blood Kiwi","Rooster","Chicken", "Seal", "Hamster","Starfish"},
     ["Feed Pets"] = {"Carrot", "Strawberry", "Blueberry", "Tomato"},
     ["Buy Event Shop"] = {"Oasis Egg", "Hamster"},
     ["Ping Pets"] = {"Hyacinth Macaw", "Fennec Fox", "Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus"},
