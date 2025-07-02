@@ -81,12 +81,20 @@ getgenv().ConfigsKaitun = {
             "Paradise Egg",
             "Bug Egg",
             "Night Egg",
+	    "Rare Egg",
+	    "Common Summer Egg",
+	    "Rare Summer Egg",
+	    "Uncommon Egg",
         },
         Buy = {
             "Paradise Egg",
             "Night Egg",
             "Bug Egg",
             "Oasis Egg",
+	    "Rare Egg",
+	    "Common Summer Egg",
+	    "Rare Summer Egg",
+	    "Uncommon Egg",
         }
     },
     
@@ -147,6 +155,7 @@ getgenv().ConfigsKaitun = {
                 "Disco Bee",
                 "Butterfly",
                 "Mimic Octopus",
+                "",
                 "Queen Bee",
                 "Dragonfly",
                 "Raccoon",
