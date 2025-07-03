@@ -108,6 +108,7 @@ getgenv().ConfigsKaitun = {
         },
         Locked = {
             "Disco Bee",
+	    "Fennec Fox",
             "Butterfly",
             "Mimic Octopus",
             "Hyacinth Macaw",
