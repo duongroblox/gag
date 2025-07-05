@@ -1,158 +1,190 @@
 getgenv().ConfigsKaitun = {
-    ["Stack Plant"] = true,
-    ["Low Cpu"] = true,
+	["Stack Plant"] = true,
+	["Low Cpu"] = true,
+	
+	["Rejoin When Update"] = false,
 
-    ["Rejoin When Update"] = true,
-    
-    ["Limit Tree"] = {
-        ["Limit"] = 400,
-        ["Destroy Untill"] = 350,
-        
-        ["Safe Tree"] = {
-            "Moon Blossom"
-        }
-    },
+	["Limit Tree"] = {
+		["Limit"] = 250,
+		["Destroy Untill"] = 200,
 
-    Seed = {
-        Buy = {
-            Mode = "Auto", -- Custom , Auto
-            Custom = {
-                "Carrot",
-                "Bamboo",
-                "Pumpkin",
-                "Daffodil",
-                "Orange Tulip",
-                "Watermelon",
-                "Mushroom",
-                "Nightshade",
-                "Beanstalk",
-            }
-        },
-        Place = {
-            Mode = "Lock", -- Select , Lock
-            Select = {
-                "Carrot"
-            },
-            Lock = {
-                "Sunflower",
-                "Elephant Ears",
-                "Dragon Pepper",
-            }
-        }
-    },
-    
-    ["Seed Pack"] = {
-        Locked = {
-            
-        }
-    },
-    
-    Events = {
-        ["Summer Harvest"] = {
-            ["Do At Money"] = 1000000,
-            ["Point Limit"] = 15000,
-        },
-        Craft = {
-            "Crafters Seed Pack",
-            "Anti Bee Egg"
-        },
-        Shop = {
-            --"Traveler's Fruit",
-            "Hamster",
-            "Oasis Egg",
-        }
-    },
-    
-    Gear = {
-        Buy = { 
-            "Master Sprinkler",
-            "Godly Sprinkler",
-            "Advanced Sprinkler"
-        },
-        Lock = {
+		["Safe Tree"] = {
+			"Moon Blossom"
+		}
+	},
 
-        },
-    },
+	Seed = {
+		Buy = {
+			Mode = "Auto", -- Custom , Auto
+			Custom = {
+				"Carrot",
+				"Bamboo",
+				"Pumpkin",
+				"Daffodil",
+				"Orange Tulip",
+				"Watermelon",
+				"Mushroom",
+				"Nightshade",
+				"Beanstalk",
+			}
+		},
+		Place = {
+			Mode = "Lock", -- Select , Lock
+			Select = {
+				"Carrot",
+			},
+			Lock = {
+				"Sunflower",
+				"Elephant Ears",
+				"Dragon Pepper",
+			}
+		}
+	},
 
-    Eggs = {
-        Place = {
-            "Anti Bee Egg",
-            "Oasis Egg",
-            "Paradise Egg",
-            "Bug Egg",
-            "Night Egg",
-            "Rare Summer Egg",
-        },
-        Buy = {
-            "Paradise Egg",
-            "Night Egg",
-            "Bug Egg",
-            "Oasis Egg",
-            "Rare Summer Egg",
-        }
-    },
-    
-    Pets = {
-        ["Upgrade Slot"] = {
-            ["Pet"] = {
-                
-            },
-            ["Limit Upgrade"] = 8,
-            ["Equip When Done"] = {
-                "Blood Kiwi",
-                "Starfish",
-                "Rooster",
-                "Peacock",
-                "Seal",
-                "Chicken",
-		"Hamster",
-            },
-        },
-        Locked = {
-            "Disco Bee",
-            "Fennec Fox",
-            "Butterfly",
-            "Mimic Octopus",
-            "Hamster",
-            "Queen Bee",
-            "Dragonfly",
-            "Raccoon",
-            "Red Fox",
-            "Peacock",
-            "Blood Kiwi",
-	    "Rooster",
-	    "Seal",
-	    "Starfish",
-            "Chicken",
-        }
-    },
+	["Seed Pack"] = {
+		Locked = {
 
-    Webhook = {
-        UrlPet = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
-        UrlSeed = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
-        PcName = "dew",
-        
-        Noti = {
-            Seeds = {
-                "Sunflower",
-                "Dragon Pepper",
-                "Elephant Ears",
-            },
-            SeedPack = {
-                "Idk"
-            },
-            Pets = {
-                "Disco Bee",
-                "Butterfly",
-                "Mimic Octopus",
-                "Queen Bee",
-                "Dragonfly",
-                "Raccoon",
-                "Red Fox",
-		"Fennec Fox",
-            },
-        }
-    },
+		}
+	},
+
+	Events = {
+		Dino = true,
+		["Traveling Shop"] = {
+			"Liberty Lily",
+			"Firework Flower",
+			--"Firework",
+			"Bald Eagle",
+		},
+		["Summer Harvest"] = {
+			["Do At Money"] = 1000000,
+			["Point Limit"] = 15000,
+		},
+		Craft = {
+			"Lightning Rod",
+			"Anti Bee Egg",
+		},
+		Shop = {
+			--"Traveler's Fruit",
+			"Hamster",
+			"Oasis Egg",
+			--"Delphinium",
+			"Lily of the Valley",
+		}
+	},
+
+	Gear = {
+		Buy = { 
+			"Master Sprinkler",
+			"Basic Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Lightning Rod",
+		},
+		Lock = {
+
+		},
+	},
+
+	Eggs = {
+		Place = {
+			"Dinosaur Egg",
+			"Oasis Egg",
+			"Anti Bee Egg",
+			"Paradise Egg",
+			"Night Egg",
+			"Bug Egg",
+			"Rare Summer Egg",
+		},
+		Buy = {
+			"Dinosaur Egg",
+			"Anti Bee Egg",
+			"Paradise Egg",
+			"Bee Egg",
+			"Night Egg",
+			"Bug Egg",
+			"Rare Summer Egg",
+		}
+	},
+
+	Pets = {
+		["Upgrade Slot"] = {
+			["Pet"] = {
+				"Blood Kiwi",
+				"Rooster",
+				"Starfish",
+				"Peacock",
+				"Seal",
+			},
+			["Limit Upgrade"] = 5,
+			["Equip When Done"] = {
+				"Blood Kiwi",
+				"Rooster",
+				"Starfish",
+				"Peacock",
+				"Seal",
+			},
+		},
+		Locked = {
+			"Seal",
+			"Starfish",
+			"Hamster",
+			"Peacock",
+			"T-Rex",
+			"Pterodactyl",
+			"Stegosaurus",
+			"Triceratops",
+			"Raptor",
+			"Night Owl",
+			"Queen Bee",
+			"Disco Bee",
+			"Fennec Fox",
+			"Disco Bee",
+			"Butterfly",
+			"Mimic Octopus",
+			"Queen Bee",
+			"Fennec Fox",
+			"Dragonfly",
+			"Raccoon",
+			"Red Fox",
+			"Blood Owl",
+			"Blood Kiwi",
+			["Rooster"] = 5,
+		},
+		LockPet_Weight = 10, -- if Weight >= 10 they will locked,
+		Instant_Sell = {
+			"Dog",
+		}
+	},
+
+	Webhook = {
+		UrlPet = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
+		UrlSeed = "",
+		PcName = "dew",
+
+		Noti = {
+			Seeds = {
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
+			},
+			SeedPack = {
+				"Idk",
+			},
+			Pets = {
+				"T-Rex",
+				"Dragonfly",
+				"Queen Bee",
+				"Raccoon",
+				"Disco Bee",
+				"Fennec Fox",
+				"Disco Bee",
+				"Butterfly",
+				"Mimic Octopus",
+				"Red Fox",
+			},
+			Pet_Weight_Noti = true,
+		}
+	},
 }
 License = "5wxY3aTfQIjbPtwsHhwvg78klCY6Fivm"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
