@@ -42,7 +42,7 @@ getgenv().gagConfig = {
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
     SEED_WEBHOOK_URL = "", 
-    NOTIFY_PETS = { "Bald Eagle", "Fennec Fox", "Disco Bee", "Raccoon", "Dragonfly", "Butterfly", "Mimic Octopus", "T-Rex", "Ankylosaurus", "Pterodactyl" },
+    NOTIFY_PETS = { "Fennec Fox", "Disco Bee", "Raccoon", "Dragonfly", "Butterfly", "Mimic Octopus", "T-Rex", "Spinosaurus" },
     NOTIFY_PETS_WEIGHT = 10,
     DISCORD_ID = "473755357274046464",
     WEBHOOK_NOTE = "dew",
