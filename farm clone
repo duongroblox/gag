@@ -19,7 +19,7 @@ getgenv().gagConfig = {
     DESTROY_UNTIL_MIN_PLANTS = 200,
     DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry" },
     
-    BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", ["Common Summer Egg"] = 20, ["Common Egg"] = 20, ["Rare Egg"] = 20},
+    BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", ["Common Summer Egg"] = 10, ["Common Egg"] = 10, ["Rare Egg"] = 10 },
     PLANT_EGGS = { "Primal Egg", "Dinosaur Egg","Paradise Egg", "Common Summer Egg", "Anti Bee Egg", "Bug Egg", "Night Egg", "Bee Egg", "Mythical Egg", "Rare Egg", "Common Egg"},
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
@@ -34,7 +34,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 10,
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Starfish"] = 3, "Iguanodon", "Capybara", "Golden Lab", "Rooster", "Seal", "Blood Kiwi", "Peacock" },
+    EQUIP_PETS = { ["Starfish"] = 3, ["Iguanodon"] = 2, "Capybara", ["Golden Lab"] = 3, "Rooster", "Seal", "Blood Kiwi" },
 
     BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
