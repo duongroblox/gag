@@ -21,7 +21,7 @@ getgenv().gagConfig = {
     DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower" },
     
     BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Oasis Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg", ["Common Egg"] = 1},
-    PLANT_EGGS = { "Anti Bee Egg", "Primal Egg", "Dinosaur Egg", "Mythical Egg", "Bug Egg", "Paradise Egg", "Rare Summer Egg", "Common Summer Egg",  "Rare Egg", "Uncommon Egg" },
+    PLANT_EGGS = { "Anti Bee Egg", "Primal Egg", "Dinosaur Egg", "Mythical Egg", "Bug Egg", "Paradise Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
     BUY_SEED_SHOP = { "Sugar Apple", "Beanstalk", "Mushroom", "Bamboo", "Pumpkin", "Watermelon", ["Daffodil"] = 50, ["Orange Tulip"] = 50, ["Carrot"] = 50 },
