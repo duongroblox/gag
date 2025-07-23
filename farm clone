@@ -118,7 +118,6 @@ getgenv().ConfigsKaitun = { -- thx config cradit to npk02
 			"Bug Egg",
 			"Paradise Egg",
 			"Mythical Egg",
-			"Rare Summer Egg",
 			"Common Summer Egg",
 			"Uncommon Egg",
 			"Common Egg",
@@ -130,7 +129,6 @@ getgenv().ConfigsKaitun = { -- thx config cradit to npk02
 			"Paradise Egg",
 			"Uncommon Egg",
 			["Common Summer Egg"] = 20,
-			["Rare Summer Egg"] = 20,
 			"Common Egg",
 		}
 	},
