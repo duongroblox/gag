@@ -150,7 +150,7 @@ getgenv().ConfigsKaitun = {
 				["Starfish"] = { 4, 70 },
 				["Koi"] = { 2, 70 },
 				["Blood Kiwi"] = {5, 70},
-                		["Rooster"] = {5, 70},,
+                		["Rooster"] = {5, 70},
 			},
 		},
 		Locked = {
