@@ -161,7 +161,7 @@ getgenv().ConfigsKaitun = {
 			["Blood Kiwi"] = 10,
 			["Rooster"] = 10,
 			"Kitsune",
-			"Corrupted Kitsune"
+			"Corrupted Kitsune",
 			"Dilophosaurus",
 			"Moon Cat",
 			"Seal",
@@ -209,7 +209,7 @@ getgenv().ConfigsKaitun = {
 				"Kitsune",
 				"Raccoon",
 				"Fennec Fox",
-				"Corrupted Kitsune"
+				"Corrupted Kitsune",
 			},
 			Pet_Weight_Noti = true,
 		}
