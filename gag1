@@ -160,6 +160,7 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			["Koi"] = 2,
 			["Blood Kiwi"] = 10,
+			"Raiju",
 			["Rooster"] = 10,
 			"Kitsune",
 			"Corrupted Kitsune",
@@ -203,6 +204,7 @@ getgenv().ConfigsKaitun = {
 			},
 			Pets = {
 				"Disco Bee",
+				"Raiju",
 				"Butterfly",
 				"Mimic Octopus",
 				"Queen Bee",
