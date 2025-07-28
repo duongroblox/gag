@@ -6,8 +6,8 @@ getgenv().ConfigsKaitun = {
 	
 	["Rejoin When Update"] = true,
 	["Limit Tree"] = {
-		["Limit"] = 400,
-		["Destroy Untill"] = 300,
+		["Limit"] = 250,
+		["Destroy Untill"] = 200,
 
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -161,6 +161,7 @@ getgenv().ConfigsKaitun = {
 			["Koi"] = 2,
 			["Blood Kiwi"] = 10,
 			"Raiju",
+			"Corrupted Kodama",
 			["Rooster"] = 10,
 			"Kitsune",
 			"Corrupted Kitsune",
@@ -204,7 +205,6 @@ getgenv().ConfigsKaitun = {
 			},
 			Pets = {
 				"Disco Bee",
-				"Raiju",
 				"Butterfly",
 				"Mimic Octopus",
 				"Queen Bee",
