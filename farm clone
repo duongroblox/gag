@@ -13,9 +13,9 @@ getgenv().gagConfig = {
     -- General:
     AUTO_UPDATE_RESTART = true,
     REDEEM_CODES = {},
-    EXTRA_PET_SLOTS = 2,
+    EXTRA_PET_SLOTS = 5,
     EXTRA_EGG_SLOTS = 5,
-    EXTRA_PET_EQUIP_SLOTS = 0,
+    EXTRA_PET_EQUIP_SLOTS = 8,
     ADD_FRIEND = true,
     OPEN_ALL_SEED_PACK = true,
     FAST_LEVEL_PET = true,
@@ -35,13 +35,13 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
-    KEEP_PETS = { ["Starfish"] = 5, "Raiju", "Corrupted Kodama", "Kodama", "Rooster", "Capybara", ["Koi"] = 2, "Tanchozuru", "Seal", "Kitsune", "Corrupted Kitsune", "Kappa", "Dilophosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Fennec Fox", "Blood Kiwi", "Peacock", ["Hamster"] = 2, "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Chicken Zombie" },
+    KEEP_PETS = { ["Starfish"] = 8, "Raiju", "Corrupted Kodama", "Kodama", "Rooster", "Capybara", ["Koi"] = 2, "Tanchozuru", "Seal", "Kitsune", "Corrupted Kitsune", "Kappa", "Dilophosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Fennec Fox", "Blood Kiwi", "Peacock", ["Hamster"] = 2, "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Chicken Zombie" },
     KEEP_PETS_WEIGHT = 10,
     KEEP_PETS_AGE = { ["Starfish"] = 75, ["Capybara"] = 75},
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Koi"] = 2, ["Seal"] = 2, "Blood Kiwi", "Rooster", "Starfish", ["Capybara"] = 1 },
-    USE_PETS_FOR_UPGRADE_SLOT = { "Starfish", "Capybara"},
+    EQUIP_PETS = { ["Seal"] = 2, "Starfish" },
+    USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
 
     BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
