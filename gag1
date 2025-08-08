@@ -28,7 +28,7 @@ getgenv().gagConfig = {
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
     BUY_SEED_SHOP = { "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", ["Daffodil"] = 50, ["Tomato"] = 50, ["Orange Tulip"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
-    KEEP_SEEDS = {},
+    KEEP_SEEDS = { "Grand Tomato" },
     KEEP_SEEDS_AFTER_MAX_PLANTS = { "Carrot" },
 
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
@@ -45,12 +45,12 @@ getgenv().gagConfig = {
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
-    SEED_WEBHOOK_URL = "", 
+    SEED_WEBHOOK_URL = "https://discord.com/api/webhooks/1403463805492527175/eDY8nzArfGnPZmiUqdaFVkw1rm0NkJCId9lGjf2kOgMslB5g2b4HDqesarnm7CXAWJ1H", 
     NOTIFY_PETS = { "French Fry Ferret", "Corrupted Kitsune", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "T-Rex", "Red Fox", "Spinosaurus"},
     NOTIFY_PETS_WEIGHT = 5,
     DISCORD_ID = "473755357274046464",
-    WEBHOOK_NOTE = "",
-    SHOW_WEBHOOK_USERNAME = false,
+    WEBHOOK_NOTE = "dew",
+    SHOW_WEBHOOK_USERNAME = true,
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/18f68a241a8acc1191c28d9a76d67fe3.lua"))() 
