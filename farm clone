@@ -5,8 +5,7 @@ getgenv().gagConfig = {
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg" },
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Primal Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "Zen Egg", "Koi"},
-    MAX_EVENT_RESTOCK_SHECKLES = 200000000,
+    CLAIM_FOOD_CONNOISSEUR_REWARD = { "Culinarian Chest", "Gorilla Chef", "Gourmet Egg", "Sunny-Side Chicken", "Pet Shard Aromatic" },
     
     -- General:
     AUTO_UPDATE_RESTART = true,
@@ -27,7 +26,7 @@ getgenv().gagConfig = {
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
     BUY_SEED_SHOP = { "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", ["Daffodil"] = 50, ["Tomato"] = 50, ["Orange Tulip"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
-    KEEP_SEEDS = { "Grand Tomato", "King Cabbage" },
+    KEEP_SEEDS = { "Grand Tomato", "King Cabbage", "Bone Blossom" },
     KEEP_SEEDS_AFTER_MAX_PLANTS = { "Carrot" },
 
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
@@ -40,8 +39,8 @@ getgenv().gagConfig = {
     EQUIP_PETS = { "Sunny-Side Chicken", "Hotdog Daschund", ["Koi"] = 1, ["Seal"] = 1, "Blood Kiwi" , "Rooster", "Starfish" },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
 
-    BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
-    USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
+    BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket" },
+    USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
     SEED_WEBHOOK_URL = "https://discord.com/api/webhooks/1403463805492527175/eDY8nzArfGnPZmiUqdaFVkw1rm0NkJCId9lGjf2kOgMslB5g2b4HDqesarnm7CXAWJ1H", 
