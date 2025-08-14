@@ -156,7 +156,8 @@ getgenv().ConfigsKaitun = {
                 ["Starfish"] = { 8, 100 },
             },
         },
-        Favorite_LockedPet = true,
+        Unfavorite_AllPet = false,
+		Favorite_LockedPet = false,
         Locked_Pet_Age = 76, -- pet that age > 60 will lock
         Locked = {
 			["Gorilla Chef"] = 5,
