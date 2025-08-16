@@ -181,8 +181,6 @@ getgenv().ConfigsKaitun = {
 			"Red Fox",
 			"Chicken Zombie",
 			["Starfish"] = 3,
-		},
-        LockPet_Weight = 7, -- if Weight >= 10 they will locked
     },
 		LockPet_Weight = 7, -- if Weight >= 10 they will locked
 		Ignore_Pet_Weight = {
