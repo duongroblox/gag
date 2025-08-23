@@ -29,6 +29,7 @@ getgenv().gagConfig = {
     ADD_FRIEND = true,
     OPEN_ALL_SEED_PACK = true,
     FAST_LEVEL_PET = true,
+    PLANT_EVENT_TREES = true,
 
     MAX_PLANTS = 200,
     DESTROY_UNTIL_MIN_PLANTS = 150,
