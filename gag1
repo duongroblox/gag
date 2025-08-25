@@ -1,14 +1,14 @@
 local keys = {  -- Add as many key
-    "vFhPPETjatdYeweVIVoBMheAliZnoJUH", 
-    "JnnKspdgBPofJlSjQhjtqnynTVTKmPWF", 
-    "ZdJYkXEetVjkLrVXKzAAMMikBVBhKhSa", 
-    "JJXJplOysWGSdSumlQYZuxWQaokOwWIt", 
-    "mgQzbNTwOnIHEnfHgtVTcQAwpZkqAmtB", 
-    "ylsvmCcKvSCeYpFqRqEQIsognXjgbnuE", 
-    "ynbzhBgFuoEqzOFacRZOTzzktoJADmjZ", 
-    "ggzDReHQqGxwnPzYIoEPZmdpWYvHXHAE", 
-    "zJMYoAWnnvHVTWwBBqogLvWfDTlBDfUF", 
-    "BxJRtRJXxyQcAQcDxFxlNlMOkGQpXUrq", 
+    "fQrVRyUtoHvGxEEgsYYFMIciFOVzIIaw", 
+    "PaNXzVUDIqqFAcrbQmCdIxkqCTkOiNon", 
+    "PBHaDrKRnhKUubEXFQChbeqPEAEiQGuD", 
+    "RXUJRIJBWUUBfxlzyxElIHjevvqLyrxJ", 
+    "RrWyNgerXuGouiXoWhJelcgKSPrWofbE", 
+    "pgSKtZuHiqROwmdOcPnmBnMGtDFVzAxO", 
+    "PdnOvVkSNPxSeuGptLHqcpccVdHIkGxI", 
+    "SPrBpusRNXXLoimtzfdhTBvqFBOUhfDt", 
+    "IUXEKHPBlNXgvKqAyNzXouyOhKMTBGHu", 
+    "MHjKRLurezSEgfcLduUniaIKEzjYGefm", 
 }
 
 script_key = keys[math.random(#keys)];
