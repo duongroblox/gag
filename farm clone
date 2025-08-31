@@ -229,7 +229,7 @@ getgenv().ConfigsKaitun = {
 			},
 		},
 		Unfavorite_AllPet = false,
-		Favorite_LockedPet = true,
+		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			["Pixie"] = 2,
