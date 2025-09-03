@@ -193,6 +193,7 @@ getgenv().ConfigsKaitun = {
 			"Paradise Egg",
 			"Bee Egg",
 			"Mythical Egg",
+			"Common Summer Egg",
 		},
 		Buy = {
 			"Bee Egg",
@@ -253,7 +254,7 @@ getgenv().ConfigsKaitun = {
 			"Sunny-Side Chicken",
 			"Lobster Thermidor",
 			"French Fry Ferret",
-			["Starfish"] = 3,
+			["Starfish"] = 8,
 			"Raiju",
 			"Corrupted Kodama",
 			"Rooster",
