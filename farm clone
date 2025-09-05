@@ -227,8 +227,6 @@ getgenv().ConfigsKaitun = {
 				["Hotdog Daschund"] = { 4, 100, 4 },
 				["Blood Kiwi"] = { 8, 100, 5 },
 				["Rooster"] = { 8, 100, 6 },
-				["Koi"] = { 2, 100, 7 },
-				["Seal"] = { 2, 100, 8 },
 			},
 		},
 		Unfavorite_AllPet = false,
