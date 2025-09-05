@@ -107,6 +107,7 @@ getgenv().ConfigsKaitun = {
 			Rewards_Item = {
 				"Enchanted Egg",
 				"Fairy Targeter",
+				"Pet Shard Glimmering",
 				"FairyPoints",
 				"Enchanted Seed Pack",
 				"Enchanted Crate",
