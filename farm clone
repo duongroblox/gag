@@ -272,6 +272,10 @@ getgenv().ConfigsKaitun = {
 			"Queen Bee",
 			"Dragonfly",
 			"Butterfly",
+			["Tarantula Hawk"] = 3,
+			["Wasp"] = 3,
+			["Honey Bee"] = 2,
+			["Bee"] = 2,
 			"Mimic Octopus",
 			"Red Fox",
 			"Chicken Zombie"
