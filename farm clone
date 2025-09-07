@@ -670,34 +670,6 @@ task.spawn(function()
     end
 end)
 
--- Task 2: Fake teleport tới RewardPoint 1 → 20
-task.spawn(function()
-    while task.wait(1) do
-        for i = 1, 20 do
-            local point = workspace:FindFirstChild('RewardPoint' .. i)
-            if point and point:IsA('Part') then
-                local objPos = point.Position
-                local targetPos = objPos + Vector3.new(0, 3, 0)
-                hrp.CFrame = CFrame.new(targetPos)
-
-                workspace.CurrentCamera.CFrame =
-                    CFrame.new(objPos + Vector3.new(0, 10, 15), objPos)
-
-                local attach = point:FindFirstChild('Attachment')
-                if attach then
-                    local prompt =
-                        attach:FindFirstChildOfClass('ProximityPrompt')
-                    if prompt then
-                        fireproximityprompt(prompt)
-                    end
-                end
-
-                task.wait(0.5)
-            end
-        end
-    end
-end)
-
 -- Task 3: Spam lệnh mỗi 60s (giữ lại print + chuẩn args)
 task.spawn(function()
     while task.wait(60) do
