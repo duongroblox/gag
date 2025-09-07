@@ -58,10 +58,10 @@ getgenv().ConfigsKaitun = {
 			Sunbulb = 8,
 			["Orange Tulip"] = 4,
 			Blueberry = 4,
+			"Strawberry" = 4,
 			Watermelon = 4,
 			Mango = 4,
 			Cactus = 4,
-			Strawberry = 4,
 			Beanstalk = 4,
 			Lightshoot = 4,
 			Grape = 4,
@@ -90,6 +90,7 @@ getgenv().ConfigsKaitun = {
 				"Easter Egg",
 				"Moon Mango",
 				"Bone Blossom",
+				"Strawberry",
 				"Fossilight",
 			}
 		}
