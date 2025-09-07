@@ -183,6 +183,7 @@ getgenv().ConfigsKaitun = {
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
 			"Lightning Rod",
+			"Harvest Tool",
 		},
 	},
 
