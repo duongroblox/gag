@@ -296,22 +296,8 @@ getgenv().ConfigsKaitun = {
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 		Ignore_Pet_Weight = {
-			"Imp ",
-			"Pixie",
-			"Brown Mouse",
-			"Grey Mouse",
-			"Ladybug",
-			"Spotted Deer",
-			"Caterpillar",
 		},
 		Instant_Sell = {
-			"Imp ",
-			"Pixie",
-			"Brown Mouse",
-			"Grey Mouse",
-			"Ladybug",
-			"Spotted Deer",
-			"Caterpillar",
 		}
 	},
 
