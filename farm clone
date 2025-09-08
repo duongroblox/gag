@@ -294,13 +294,14 @@ getgenv().ConfigsKaitun = {
 			"Red Fox",
 			"Chicken Zombie"
 		},
-		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+		LockPet_Weight = 7, -- if Weight >= 10 they will locked
 		Ignore_Pet_Weight = {
+			"NAME oF PET THAT U DONT NEED LOCK",
 		},
 		Instant_Sell = {
+			"NAME oF SOMETHING",
 		}
 	},
-
 	Webhook = {
 		UrlPet = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
 		UrlSeed = "xxx",
