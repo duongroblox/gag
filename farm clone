@@ -286,15 +286,15 @@ getgenv().ConfigsKaitun = {
 			"Queen Bee",
 			"Dragonfly",
 			"Butterfly",
-			["Tarantula Hawk"] = 3,
-			["Wasp"] = 3,
-			["Honey Bee"] = 2,
-			["Bee"] = 2,
+			["Tarantula Hawk"] = 5,
+			["Wasp"] = 5,
+			["Honey Bee"] = 5,
+			["Bee"] = 5,
 			"Mimic Octopus",
 			"Red Fox",
 			"Chicken Zombie"
 		},
-		LockPet_Weight = 7, -- if Weight >= 10 they will locked
+		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 		Ignore_Pet_Weight = {
 			"NAME oF PET THAT U DONT NEED LOCK",
 		},
