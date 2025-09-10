@@ -307,6 +307,8 @@ getgenv().ConfigsKaitun = {
 			"Cardinal",
 			"Ladybug",
 			"Pixie",
+			"Imp",
+			"Shroomie",
 		}
 	},
 	Webhook = {
