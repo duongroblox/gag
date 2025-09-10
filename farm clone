@@ -305,6 +305,8 @@ getgenv().ConfigsKaitun = {
 		},
 		Instant_Sell = {
 			"Cardinal",
+			"Ladybug",
+			"Pixie",
 		}
 	},
 	Webhook = {
