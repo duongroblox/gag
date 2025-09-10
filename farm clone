@@ -298,10 +298,10 @@ getgenv().ConfigsKaitun = {
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 		Ignore_Pet_Weight = {
-			"NAME oF PET THAT U DONT NEED LOCK",
+			"Cardinal",
 		},
 		Instant_Sell = {
-			"NAME oF SOMETHING",
+			"Cardinal",
 		}
 	},
 	Webhook = {
