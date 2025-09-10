@@ -272,6 +272,7 @@ getgenv().ConfigsKaitun = {
 			"Capybara",
 			["Koi"] = 2,
 			["Tanchozuru"] = 3,
+			["Moth"] = 3, 
 			"Kitsune",
 			"Corrupted Kitsune",
 			"Dilophosaurus",
