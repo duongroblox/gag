@@ -294,6 +294,9 @@ getgenv().ConfigsKaitun = {
 			"Pixie",
 			"Imp",
 			"Shroomie",
+			"Badger",
+			"Robin",
+			"Grizzly Bear",
 		}
 	},
 	Webhook = {
