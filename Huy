@@ -193,6 +193,7 @@ getgenv().ConfigsKaitun = {
 		["Upgrade Slot"] = {
 			["Pet"] = {
 				["Starfish"] = { 1, 100, 7 , true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
+				["Capybara"] = { 1, 100, 6 , true },
 			},
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
@@ -201,13 +202,14 @@ getgenv().ConfigsKaitun = {
 				["Hotdog Daschund"] = { 4, 100, 3 },
 				["Blood Kiwi"] = { 8, 100, 4 },
 				["Rooster"] = { 8, 100, 5 },
-				["Starfish"] = { 1, 100, 6 },
 			},
 		},
 		Unfavorite_AllPet = false,
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Mizuchi",
+			"Silver Dragonfly",
 			"Tiger",
 			"Swan",
 			"Red Panda",
@@ -288,6 +290,8 @@ getgenv().ConfigsKaitun = {
 			},
 			Pets = {
 				"Tiger",
+				"Mizuchi",
+				"Silver Dragonfly",
 				"Space Squirrel",
 				"Swan",
 				"Phoenix",
