@@ -5,7 +5,7 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 90, -- cooldown to collect fruit
+	Collect_Cooldown = 60, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = false,
@@ -45,23 +45,6 @@ getgenv().ConfigsKaitun = {
 			"Elephant Ears",
 			"Fossilight",
 			"Princess Thorn",
-			-- for the event
-			["Evo Beetroot"] = 20,
-			["Evo Blueberry"] = 20,
-			["Evo Pumpkin"] = 20,
-			["Evo Mushroom"] = 20,
-			["Evo Beetroot I"] = 20,
-			["Evo Blueberry I"] = 20,
-			["Evo Pumpkin I"] = 20,
-			["Evo Mushroom I"] = 20,
-			["Evo Beetroot II"] = 20,
-			["Evo Blueberry II"] = 20,
-			["Evo Pumpkin II"] = 20,
-			["Evo Mushroom II"] = 20,
-			["Evo Beetroot III"] = 20,
-			["Evo Blueberry III"] = 20,
-			["Evo Pumpkin III"] = 20,
-			["Evo Mushroom III"] = 20,
 		}
 	},
 
@@ -113,9 +96,10 @@ getgenv().ConfigsKaitun = {
 			"Common Summer Egg"
 		},
 		Craft = {
-			"Anti Bee Egg",
 			"Enchanted Chest",
 			"Enchanted Egg",
+			"Enchanted Seed Pack",
+			"Anti Bee Egg",
 			"Pet Shard GiantBean",
 			"Sprout Egg",
 		},
@@ -133,6 +117,7 @@ getgenv().ConfigsKaitun = {
 			"Medium Treat",
 			"Medium Toy",
 			"Harvest Tool",
+			"Watering Can"
 		},
 		Lock = {
 			"Master Sprinkler",
@@ -148,14 +133,15 @@ getgenv().ConfigsKaitun = {
 			"Jungle Egg",
 			"Anti Bee Egg",
 			"Bug Egg",
+			"Fall Egg",
+			"Enchanted Egg",
 			"Paradise Egg",
-			"Bee Egg",
 			"Rare Egg",
 		},
 		Buy = {
+			"Rare Egg",
 			"Jungle Egg",
 			"Bee Egg",
-			"Rare Egg",
 			"Oasis Egg",
 			"Paradise Egg",
 			"Anti Bee Egg",
@@ -163,8 +149,6 @@ getgenv().ConfigsKaitun = {
 			"Rare Summer Egg",
 			"Bug Egg",
 			"Mythical Egg",
-			"Uncommon Egg",
-			"Common Egg",
 		}
 	},
 
@@ -183,17 +167,20 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
+				["Chubby Chipmunk"] = {4, 100, 1},
 				["Tarantula Hawk"] = { 1, 100, 1 },
 				["Sunny-Side Chicken"] = { 4, 100, 2 }, 
 				["Hotdog Daschund"] = { 4, 100, 3 },
-				["Blood Kiwi"] = { 8, 100, 4 },
-				["Rooster"] = { 8, 100, 5 },
+				["Blood Kiwi"] = { 8, 100, 2 },
+				["Rooster"] = { 8, 100, 2 },
 			},
 		},
 		Unfavorite_AllPet = false,
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Chinchilla",
+			["Chubby Chipmunk"] = 4,
 			"Mizuchi",
 			"Tiger",
 			"Swan",
@@ -274,6 +261,7 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
+				"Chinchilla",
 				"Tiger",
 				"Mizuchi",
 				"Silver Dragonfly",
