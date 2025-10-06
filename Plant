@@ -1,7 +1,6 @@
 local keys = {  -- Add as many key
     "zkgSefxeeUDSMbxpbQrADsxlRXKwvcqD", 
     "hhaxflyXDTDmUeiAdhUOauIbopmKacbU",
-    "caQQqwNMmmiTUsiKLmEYjiLeNAskRFBS",
 }
 
 math.randomseed(os.time())
