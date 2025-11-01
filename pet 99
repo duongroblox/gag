@@ -1,4 +1,4 @@
-script_key="vAENPvShRbKVdpWYwTWnJvWJAclpfBiO";
+script_key="LeZwxpAMzhOoWkTPIkwnnkzCdIlnguwK";
 getgenv().Config = {
     DPS_THRESHOLDS = {
         HOUSE1 = { '>0' },
