@@ -1,4 +1,11 @@
-script_key="pnrtbvAaoklhsoWzHmCGhnYDPZXmEVur";
+local keys = {  -- Add as many key
+    "EoJULeBKeYFFCOIWphzuXKfRaMlzIYoe",
+    "PpsRLDwWUinlyuBCjdVLKimUXrrMICNS",
+    "wZYdTtSJKDXyVWOHEprVVLietwKTcPKZ",
+}
+
+math.randomseed(os.time())
+script_key = keys[math.random(#keys)];
 setfpscap(3)
 
 getgenv().gagConfig = {
@@ -58,4 +65,4 @@ getgenv().gagConfig = {
     GIFT_PET = {},
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a2234a9cfbe480dfed9eaf6c00a012ca.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c916e5b90dc37c71ecf1ec00dfce3d5d.lua"))()
