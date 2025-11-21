@@ -1,6 +1,6 @@
 script_key = "gRlbnUxCrpFDcHRUKGVDTcKzgnUgtvjV"
 getgenv().Config = {
-    FARM_MODE = "Crate", -- BattlePass / Crate
+    FARM_MODE = "BattlePass", -- BattlePass / Crate
     AUTO_RESTART_WHEN_UPDATE = true,
     AUTO_SHUTDOWN_WHEN_HOP_ERROR = false, -- If error please use, please use and check before going offline
     DISPLAY_UI = true,
