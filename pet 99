@@ -1,5 +1,5 @@
 setfpscap(5)
-script_key = "auzzdBRFaVDxAUzDxhCCTxhqRaycDzLL";
+script_key = "eqkaFEqnCzUgzUunPFyIjitpuMnJHzcz";
 task.wait(10) -- DO NOT remove this wait, it's against double counts.
 -- INSERT YOUR CONFIG HERE --
 getgenv().GGFX_MODE = 1 --1 = REMOVE_TEXTURES : more stable! but no visuals
@@ -39,4 +39,4 @@ getgenv().GMAIL_ITEMS = {
 ["Brainrot egg"] = {Class = "Egg", Id = "Exclusive Egg 56", MinAmount = 1},
 }
 getgenv().GMAX_MAIL_COST = "2m" -- this can limit how many mails sent/day
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba2dcad2127dcfc04301dfe52ce6c61c.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6e75890d2e36b4613270666c4f5ccab3.lua"))()
