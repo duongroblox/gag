@@ -1,29 +1,40 @@
-script_key = "gRlbnUxCrpFDcHRUKGVDTcKzgnUgtvjV"
+script_key = '6i8AadpniZn2lx'
 getgenv().Config = {
-    FARM_MODE = "Crate", -- BattlePass / Crate
-    AUTO_RESTART_WHEN_UPDATE = true,
-    AUTO_SHUTDOWN_WHEN_HOP_ERROR = false, -- If error please use, please use and check before going offline
-    DISPLAY_UI = true,
-    REJOIN_WHEN_STUCK_LOADING_AFTER = 300, -- Customize if u find it too fast, depending on your network
-    STOP_AUTO_BUY_FINAL_REWARD = false, -- Stop auto buy Raygun in FARM_MODE = "BattlePass"
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1441290926591836160/LghiYePQPEcKMja7uAvo5Yez2of48fsguJXQhoaNGvM1f1XsAIxLjok9wC3qAQe7rq9p",
-    WEBHOOK_NOTE = "Dew"
+    SERVER_HOP = false, -- true: bật hop server, false: tắt hop server
+    DPS_THRESHOLDS = {
+        HOUSE1 = { '>0' },
+        HOUSE2 = { '>1000' },
+        HOUSE3 = { '6000~14000', '>25000' },
+        HOUSE4 = { '14000~24000', '>35000' },
+        HOUSE5 = { '>24000' },
+        HOUSE6 = { '>30000' },
+    },
+    plant = {
+        PET_SLOTS = { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -- slot đặt pet, put pet
+        EGG_SLOTS = { 10 }, -- slot đặt trứng , put egg
+    },
+    SEND_PET = {
+        Usernames = { 'TranQuangDat2002' }, --- name1 , name2 , name3 ---
+        PetSendInterval = 20,
+        SEND_ALL = true, -- true: SEND ALL, false: SEND PET CONFIG ----
+        Name_Pet = { '' }, --HUGE NAME 1 , HUGE NAME 2 , HUGE NAME 3 ---
+    },
+    SEND_DIAMONDS = {
+        Usernames = { 'TranQuangDat2002' }, --- name1 , name2 , name3 ---
+        MinDiamonds = 100000000,
+    },
+    SEND_ITEM = {
+        Usernames = { 'TranQuangDat2002' }, --- name1 , name2 , name3 ---
+        ['Spectral Potion'] = { amount = 3 }, --- number and 'all' ----
+    },
+    SEND_EGGS = {
+        Usernames = { 'TranQuangDat2002' }, --- name1 , name2 , name3 ---
+        ['Exclusive Egg 56'] = true,
+    },
+    Webhook = {
+        ID = '', -- Discord ID để tag
+        IdNames = { 'Huge', 'Titanic' }, -- Pet cần theo dõi
+        URL = '', -- URL webhook private
+    },
 }
-
--- No edits
-task.spawn(function()
-    local LastCheck = tick()
-    while task.wait() do
-        if getgenv().ScriptLoaded then
-            break
-        end
-
-        pcall(function()
-            if LastCheck + 180 <= tick() then
-                game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
-            end
-        end)
-    end
-end)
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8e7c89050d8f703ed98b1f594b515d22.lua"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/xitrumhub/sucacheo-hub/refs/heads/main/SUCACHEO%20HUB'))()
