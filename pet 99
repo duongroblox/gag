@@ -31,7 +31,7 @@ getgenv().GEVENT_UPGRADES = {
 getgenv().GWEBHOOK_USERID = "473755357274046464"
 getgenv().GWEBHOOK_LINK = ""
 getgenv().GMAIL_RECEIVERS = {"TranQuangDat2002"} -- for Huges and mailrules.
-getgenv().GLOOTBOXES = {"Locked Hype Egg"},
+getgenv().GLOOTBOXES = {"Locked Hype Egg"}
 getgenv().GMAIL_ITEMS = {
 ["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
 ["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "2m", MinAmount = "50m"}, -- mail diamonds, to enable lower MinAmount..
