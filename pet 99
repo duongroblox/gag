@@ -41,7 +41,8 @@ getgenv().GMAIL_ITEMS = {
 ["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
 ["Snowflake Gift"] = {Class = "Lootbox", Id= "Snowflake Gift", Amount = 1},
 ["Jolly Gift"] = {Class = "Lootbox", Id = "Jolly Gift", Amount = 1},
-["Easter Gift"] = {Class = "Lootbox", Id = "Easter Gift", Amount = 1},
+["Titanic Easter Gift"] = {Class = "Lootbox", Id = "Easter Gift", Amount = 1},
+["Huge Easter Gift"] = {Class = "Lootbox", Id = "Easter Gift", Amount = 1},
 ["Slime Gift"] = {Class = "Lootbox", Id = "Slime Gift", Amount = 1},
 }
 getgenv().GMAX_MAIL_COST = "2m" -- this can limit how many mails sent/day
