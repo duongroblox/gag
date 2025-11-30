@@ -4,7 +4,7 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Auto Trade"] = {
         ["Enabled"] = false,
-        ["Whitelist Username"] = {"TranQuangDat2002"},
+        ["Whitelist Username"] = {""},
         ["Category Fish"] = { -- Only Select one, fill in the fish category or fish name
             "Secret",
         },
@@ -89,7 +89,7 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"}, -- Do not change
             ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
             ["Tropical Grove"] = {"Astral Rod"},
-	    	["Sisyphus Statue"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
+	    	["Ocean"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
     },
 
