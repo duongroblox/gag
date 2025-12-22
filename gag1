@@ -4,6 +4,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Favorite"] = false,
         ["Fish Name"] = {
             "Sacred Guardian Squid",
+        },
     },
     ["Auto Trade"] = {
         ["Enabled"] = false,
