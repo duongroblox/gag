@@ -5,7 +5,7 @@ getgenv().Config = {
     },
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1391995482888212570/oRy4bRdngebqz4veeL7ta_UCkwtFivu7kkuz1JQ1bYR80Or6qzHLQjTsvPD4Uj1XAaAG",
-        ["UserID"] = "473755357274046464",
+        ["UserID"] = "1000060817821143090",
         ["Chance"] = "250k"
     },
     ["RodLocations"] = {
