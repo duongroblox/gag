@@ -9,6 +9,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Megalodon",
             "Robot Kraken",
             "Worm Fish",
+        },
     },
     ["Auto Trade"] = {
         ["Enabled"] = false,
