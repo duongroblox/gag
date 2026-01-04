@@ -3,19 +3,22 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Perfect"] = true,
         ["Auto Favorite"] = true,
         ["Fish Name"] = {
-            "Bloodmoon Whale",
-            "Elshark Gran Maja",
-            "Megalodon",
-            "Robot Kraken",
-            "Worm Fish",
+            "Sacred Guardian Squid",
+            {Name = "Ruby", Variant = "Gemstone"},
+            {Name = "Blob Fish", Variant = "Gemstone"},
+        },
+        ["Auto Accept Trade"] = true,
     },
     ["Auto Trade"] = {
         ["Enabled"] = false,
         ["Whitelist Username"] = {""},
-        ["Category Fish"] = { -- Only Select one, fill in the fish category or fish name
+        ["Category Fish"] = {
             "Secret",
         },
         ["Fish Name"] = {
+        },
+        ["Item Name"] = {
+            "Evolved Enchant Stone",
         },
     },
     ["Farm Coin Only"] = {
@@ -29,12 +32,11 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
-        ["Auto Element Rod"] = false,
+        ["Auto Element Rod"] = true,
         ["Unlock Ancient Ruin"] = true,
         ["Allowed Sacrifice"] = {
             "Blob Shark",
             "Ghost Shark",
-            "Skeleton Narwhal",
         },
         ["FARM_LOC_SECRET_SACRIFICE"] = "Ocean",
 
@@ -48,23 +50,10 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1442875419232829581/IazsXM69XXthYBWJqVksKjz1YgnCZoTRCTGFEuUVttRrzF4UxNMkIWKARSLNtAxPZ2D3",
     },
     ["Weather"] = {
-        ["Auto Buying"] = false,
-        ["Minimum Rod"] = "Astral Rod",
+        ["Auto Buying"] = true,
+        ["Minimum Rod"] = "Ghostfinn Rod",
         ["Weather List"] = {
             "Wind",
-        },
-    },
-    ["Potions"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Astral Rod",
-    },
-    ["Totems"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Ghostfinn Rod",
-        ["Buy List"] = {
-            "Luck Totem",
-            "Mutation Totem",
-            "Shiny Totem",
         },
     },
     ["Event"] = {
@@ -78,21 +67,11 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Enchant"] = {
         ["Auto Enchant"] = true,
-        ["Roll Enchant"] = false, -- true = Roll until get TOP 1 enchant only (first in list)
-        ["Evolved Roll Enchant"] = true, -- true = Roll Evolved Stone until get ANY evolved-only enchant from list, then fallback to regular stone
+        ["Roll Enchant"] = false, -- Roll enchant until get Leprechaun II
+        ["Minimum Rod"] = "Astral Rod",
         ["Enchant List"] = {
-            "SECRET Hunter",
-        },
-        ["Second Enchant"] = false,
-        ["Allowed Sacrifice"] = {
-            "Blob Shark",
-            "Ghost Shark",
-            "Skeleton Narwhal",
-        },
-        ["Second Enchant List"] = {
             "Prismatic I",
         },
-        ["Minimum Rod"] = "Ghostfinn Rod",
     },
     ["Bait List"] = {
         ["Auto Buying"] = true,
@@ -101,6 +80,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Chroma Bait",
             "Corrupt Bait",
             "Aether Bait",
+        "Singularity Bait",
         },
     },
     ["Rod List"] = {
@@ -121,13 +101,11 @@ _G.FishItConfig = _G.FishItConfig or {
     },
 
     ["ExtremeFpsBoost"] = true,
-    ["UltimatePerformance"] = false,
-    ["Disable3DRender"] = false,
-    ["AutoRemovePlayer"] = true,
-    ["AutoReconnect"] = true,
-    ["HideGUI"] = false,
-    ["Debug"] = false,
-    ["EXIT_MAP_IF_DISCONNECT"] = false,
+    ["UltimatePerformance"] = true,
+    ["Disable3DRender"] = true,
+    ["AutoRemovePlayer"] = false,
+    ["AutoReconnect"] = false,
+    ["Debug"] = true,
 }
 script_key="CDD0AEE7DAD2093FD6A6917901B02022";
 local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)()
