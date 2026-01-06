@@ -48,11 +48,24 @@ _G.FishItConfig = _G.FishItConfig or {
 
         ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1442875419232829581/IazsXM69XXthYBWJqVksKjz1YgnCZoTRCTGFEuUVttRrzF4UxNMkIWKARSLNtAxPZ2D3",
     },
-    ["Weather"] = {
-        ["Auto Buying"] = true,
-        ["Minimum Rod"] = "Ghostfinn Rod",
+   ["Weather"] = {
+        ["Auto Buying"] = false,
+        ["Minimum Rod"] = "Astral Rod",
         ["Weather List"] = {
             "Wind",
+        },
+    },
+    ["Potions"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Astral Rod",
+    },
+    ["Totems"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Buy List"] = {
+            "Luck Totem",
+            "Mutation Totem",
+            "Shiny Totem",
         },
     },
     ["Event"] = {
