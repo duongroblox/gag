@@ -96,7 +96,7 @@ getgenv().Config = {
     },
     ["Auto Rebirth"] = {
         ["Enabled"] = true,
-        ["Max Rebirth"] = 24,
+        ["Max Rebirth"] = 27,
         ["Max Speed"] = 510,
     },
     ["Lucky Blocks"] = {
@@ -110,13 +110,13 @@ getgenv().Config = {
         ["Enabled"] = true,                                 -- Auto Tower Trials for Secret/Celestial/Divine/Infinity
         ["Auto Claim"] = true, 
         ["Max Deposits"] = 15, -- 0 = game max (20), >0 = stop depositing at this count  
-        ["Collect Reward"] = {"Noobini Infeeny", "Anububu" , "Meta Technetta" , "Magmew"},
+        ["Collect Reward"] = {"Noobini Infeeny", "Anububu" , "Meta Technetta" , "Magmew" , "Doomini Tiktookini"},
     },
     ["Fire & Ice Sacrifice"] = {
         ["Enabled"] = false,
     },
     ["Phantom Event"] = {
-        ["Enabled"] = false,
+        ["Enabled"] = true,
     },
 }
 
