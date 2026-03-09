@@ -113,10 +113,10 @@ getgenv().Config = {
         ["Collect Reward"] = {"Noobini Infeeny", "Anububu" , "Meta Technetta" , "Magmew"},
     },
     ["Fire & Ice Sacrifice"] = {
-        ["Enabled"] = true,
+        ["Enabled"] = false,
     },
     ["Phantom Event"] = {
-        ["Enabled"] = true,
+        ["Enabled"] = false,
     },
 }
 
