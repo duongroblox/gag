@@ -1,124 +1,60 @@
-script_key="pDXlNFexKPVpRuomVnwmICAauemZudYA";
-getgenv().Config = {
-    ["Main"] = {
-        ["Keep Inventory"] = "Dutchmello Velerino",
-        ["Collect Cash"] = true,
-        ["Collect Tokens"] = true,
-        ["Collect Brainrots"] = true,
-        ["Protected Rarities"] = {"Infinity"},
+FNR_Key = "97a292e965cf861efee2256850d5a2ec"
+getgenv().FNR_Config = {
+    ["Level"] = {
+        ["Auto Farm"] = true,
+        ["Level Cap"] = 375,
     },
-    ["Performance"] = {
-        ["FPS Cap"] = 20,
-        ["Black Screen"] = false,
-        ["Kick if Ping above"] = 75000,
+    ["Misc Farm"] = {
+        ["Auto Buso"] = false,
+        ["Auto Geppo"] = true,
+        ["Auto World Scroll"] = false,
     },
-    ["Webhook"] = {
-        ["Url"] = "https://discord.com/api/webhooks/1479906229664088136/knytn_rfTcP3o2WAX2wUXaR4Hypmd5VPO044b2IiblvyvPe7boTfIqZkK8pcbwhquu-n",
-        ["Discord ID"] = "473755357274046464",
-        ["Ignore Notify"] = {dew},
-        ["Monitor Interval"] = 0,                        -- Minutes between each Account Monitoring webhook (0 = disabled)
+    ["Auto Stats"] = {
+        ["Strength"] = 675,
+        ["Stamina"] = 0,
+        ["Defense"] = 1375,
+        ["GunMastery"] = 0,
+        ["SwordMastery"] = 0,
     },
-    ["Solo Mode"] = {
-        ["Server Cloning"] = true,
-        ["Enabled"] = true,
+    ["Fishing"] = {
+        ["Auto Farm"] = true,
+        ["Use Baits"] = {
+            ["Common Fish Bait"] = true,
+            ["Rare Fish Bait"] = true,
+            ["Legendary Fish Bait"] = true,
+        },
+        ["Auto Sell"] = { "Common Fish", "Rare Fish", "Legendary Fish" },
+        ["Craft Cap"] = 10,
+        ["Auto Craft"] = { "Legendary Fish" },
     },
-    ["Dupe Mode"] = {
-        ["Arcade Machine"] = {
-            ["Enabled"] = true,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {"Dutchmello Velerino"},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 0,
-            ["Size Priority"] = 0,
-        },
-        ["ATM Machine"] = {
-            ["Enabled"] = true,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {"Dutchmello Velerino"},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 0,
-            ["Size Priority"] = 0,
-        },
-        ["Blackhole Machine"] = {
-            ["Enabled"] = true,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {"Dutchmello Velerino"},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 0,
-            ["Size Priority"] = 0,
-        },
-        ["Spawn Machine"] = {
-            ["Enabled"] = false,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {""},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 190,
-            ["Max Scale"] = 2.99,
-            ["Size Priority"] = 0,
-        },
-        ["Letterbox Machine"] = {
-            ["Enabled"] = true,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = { "Dutchmello Velerino"},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 0,
-            ["Size Priority"] = 0,
-        },
-        ["Doom Machine"] = {
-            ["Enabled"] = true,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {"Dutchmello Velerino"},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 0,
-            ["Size Priority"] = 0,
-        },
-        ["Fire & Ice Machine"] = {
-            ["Enabled"] = true,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {"Dutchmello Velerino"},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 0,
-            ["Size Priority"] = 0,
+    ["Merchant"] = {
+        ["Auto Farm"] = true,
+        ["Find For Banana Rod"] = true,
+        ["Items"] = {
+            ["All Seeing Shamrock"] = true,
+            ["Mythical Fruit Chest"] = true,
+            ["Merchants Banana Rod"] = true,
         },
     },
-    ["Auto Rebirth"] = {
-        ["Enabled"] = true,
-        ["Max Rebirth"] = 24,
-        ["Max Speed"] = 510,
+    ["Private Code"] = "PutPrivateCode",
+    ["Multiple Private Code"] = {
+        ["Ps Code 1"] = "User1,User2",
+        ["Ps Code 2"] = "User3,User4",
     },
-    ["Lucky Blocks"] = {
-        ["Enabled"] = true,                              -- Enable Infinity farming while duping
-        ["Collect Types"] = {"Divine", "Celestial"},      -- Types to collect (Divine > Celestial, NOT Secret)
-        ["Max Level"] = 200,                              -- Max LB level (under 200 = better conversion)
-        ["Pickup Attempts"] = 8,                          -- Pickup attempts per LB
-        ["Auto Upgrade LB"] = false,                       -- Sell current LB if a better one spawns
-        ["Auto Open"] = {"Divine"},     -- auto-open LB tools from inventory (table of types to open, true = same as Collect Types, false = disabled)
+    ["Private Place"] = "First Sea",
+    ["Webhook Options"] = {
+        ["URL"] = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
+        ["Send When Max Level"] = false,
+        ["Send When Max Peli"] = false,
+        ["Send When Go To Merchant"] = true,
+        ["Send When Got Banned"] = false,
+        ["Send When Private Code Invalid"] = false,
+        ["Ping Everyone"] = true,
     },
-    ["Tower"] = {
-        ["Enabled"] = true,                                 -- Auto Tower Trials for Secret/Celestial/Divine/Infinity
-        ["Auto Claim"] = true, 
-        ["Max Deposits"] = 15, -- 0 = game max (20), >0 = stop depositing at this count  
-        ["Collect Reward"] = {"Noobini Infeeny", "Anububu" , "Meta Technetta" , "Magmew"},
-    },
-    ["Fire & Ice Sacrifice"] = {
-        ["Enabled"] = true,
-    },
-    ["Phantom Event"] = {
-        ["Enabled"] = true,
-    },
+    ["Black Screen"] = true,
+    ["Low CPU"] = true,
+    ["Tween Speed"] = 40,
+    ["Auto ADS"] = true,
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/fcdf7fe9bd2c382f2c006b3efb9d2eea.lua"))()
+loadstring(game:HttpGet("https://api.fennirhub.net/scripts/1890189ac46875cec307ef51554087fb"))()
