@@ -1,45 +1,30 @@
-FNR_Key="97a292e965cf861efee2256850d5a2ec"
-getgenv().FNR_Config = {
+getgenv().Config = {
+    ItemsForBuying = {"Mythical Fruit Chest"},
+    VipServers = {
+        ["VipCode1"] = {
+            Accounts = {
+                "AccName1",
+                "AccName2",
+                "AccName3",
+            }
+        },
 
-    -- ── LEVEL SETTINGS ───────────────────────────────────
-    ["Level Cap"] = 375, -- Stop quest farming once this level is reached
-
-    -- ── PRIVATE SERVER CODE ──────────────────────────────
-    ["Private Code"] = "PutYourPrivateCode",
-    --[[
-        Configure multiple private server codes in a single file
-        + Each code must be written inside [""] = "",
-        + Each account must be separated by a comma
-
-        If no Private Code is specified, the script will automatically join a public server.
-        However, if a Private Code is provided but it is invalid, the script will NOT
-        fall back to a public server and will treat it as an invalid private code case.
-    ]]
-    ["Multiple Private Code"] = {
-        ["Ps Code 1"] = "User1,User2,User3",
-        ["Ps Code 2"] = "User4,User5,User6",
+        ["VipCode2"] = {
+            Accounts = {
+                "AccName4",
+                "AccName5",
+            }
+        },
     },
-
-    ["Auto Get Geppo"] = true, -- Learn Geppo (Sky Walk) first
-    ["Auto Get Buso"] = false, -- Learn Buso Haki after obtaining Geppo
-    ["World Scroll"] = false, -- Pick up World Scroll (requires level 325+)
-    ["Fishing"] = true, -- Farm money after completing the steps above
-    ["Merchant"] = true, -- Buy items from Merchant when enough money is available
-
-    -- ── STATS CAP ────────────────────────────────────────
-    -- Set to 0 to skip that stat
-    ["Auto Stats"] = {
-        ["Strength"] = 750,
-        ["Defense"] = 1275,
-    },
-
-    -- ── DISCORD ──────────────────────────────────────────
-    ["Webhook URL"] = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
-
-    -- ── OTHER FEATURES ───────────────────────────────────
-    ["Auto ADS"] = true, -- Automatically claim 2x EXP from ads
-
-    -- ── PERFORMANCE ──────────────────────────────────────
-    ["FPS Cap"] = 10,
+    WebHookURL = "",
+    WhitelistDefense = false, -- Auto Kick Accs If Detects Someone Else.
+    KaitunLevelFarming = true, -- Fully Auto Made 375 Level.
+    KeepLegFishes = false, -- Keep Leg. Fishes.
+    HideUI = false,
+    FpsCap = 30,
+    ServerHopLogic = false, -- This System Will Farm Peli, Then Server Hop For Fastest Merchant Spawn.
+    AutoLeaveAfterASE = false -- Automaticly Leave After Get All Seeing Shamrock.
 }
-loadstring(game:HttpGet('https://api.fennirhub.net/scripts/3cd4a32a62320bf6b2def1938bf22dbd'))()
+
+script_key="ZKQwnXqKnbPhwGhnumHBYtMzgqglFpNk";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/72c3731cd1aa85d99659f64b5a3ae3b1.lua"))()
