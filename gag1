@@ -1,123 +1,53 @@
-script_key="pDXlNFexKPVpRuomVnwmICAauemZudYA";
-getgenv().Config = {
-    ["Main"] = {
-        ["Keep Inventory"] = "Draculini Meowlini",
-        ["Collect Cash"] = true,
-        ["Collect Tokens"] = true,
-        ["Collect Brainrots"] = true,
-        ["Protected Rarities"] = {"Infinity"},
-    },
-    ["Performance"] = {
-        ["FPS Cap"] = 20,
-        ["Black Screen"] = false,
-        ["Kick if Ping above"] = 75000,
-    },
-    ["Webhook"] = {
-        ["Url"] = "https://discord.com/api/webhooks/1479906229664088136/knytn_rfTcP3o2WAX2wUXaR4Hypmd5VPO044b2IiblvyvPe7boTfIqZkK8pcbwhquu-n",
-        ["Discord ID"] = "473755357274046464",
-        ["Ignore Notify"] = {dew},
-        ["Monitor Interval"] = 0,                        -- Minutes between each Account Monitoring webhook (0 = disabled)
-    },
-    ["Solo Mode"] = {
-        ["Server Cloning"] = true,
-        ["Enabled"] = true,
-    },
-    ["Dupe Mode"] = {
-        ["Arcade Machine"] = {
-            ["Enabled"] = false,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {""},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 50,
-            ["Size Priority"] = 0,
-        },
-        ["ATM Machine"] = {
-            ["Enabled"] = false,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {""},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 50,
-            ["Size Priority"] = 0,
-        },
-        ["Blackhole Machine"] = {
-            ["Enabled"] = false,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {""},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 50,
-            ["Size Priority"] = 0,
-        },
-        ["Spawn Machine"] = {
-            ["Enabled"] = false,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {""},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 190,
-            ["Max Scale"] = 2.99,
-            ["Size Priority"] = 0,
-        },
-        ["Letterbox Machine"] = {
-            ["Enabled"] = false,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = { ""},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 50,
-            ["Size Priority"] = 0,
-        },
-        ["Doom Machine"] = {
-            ["Enabled"] = false,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {""},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 50,
-            ["Size Priority"] = 0,
-        },
-        ["Fire & Ice Machine"] = {
-            ["Enabled"] = false,
-            ["Brainrots to Deposit"] = 1,
-            ["Use Rarities"] = {""},
-            ["Use Specific Brainrot"] = {""},
-            ["Min Luck Minutes"] = 0,
-            ["Max Level"] = 191,
-            ["Max Scale"] = 50,
-            ["Size Priority"] = 0,
-        },
-    },
-    ["Auto Rebirth"] = {
-        ["Enabled"] = true,
-        ["Max Rebirth"] = 24,
-        ["Max Speed"] = 510,
-    },
-    ["Lucky Blocks"] = {
-        ["Enabled"] = true,                              -- Enable Infinity farming while duping
-        ["Collect Types"] = {"Divine", "Celestial"},      -- Types to collect (Divine > Celestial, NOT Secret)
-        ["Max Level"] = 200,                              -- Max LB level (under 200 = better conversion)
-        ["Pickup Attempts"] = 8,                          -- Pickup attempts per LB
-        ["Auto Upgrade LB"] = false,                       -- Sell current LB if a better one spawns
-    },
-    ["Tower"] = {
-        ["Enabled"] = true,                                 -- Auto Tower Trials for Secret/Celestial/Divine/Infinity
-        ["Auto Claim"] = true, 
-        ["Max Deposits"] = 20, -- 0 = game max (20), >0 = stop depositing at this count  
-        ["Collect Reward"] = {"Noobini Infeeny", "Anububu" , "Meta Technetta" , "Magmew"},
-    },
-    ["Fire & Ice Sacrifice"] = {
-        ["Enabled"] = true,
-    },
-    ["Phantom Event"] = {
-        ["Enabled"] = true,
-    },
-}
+FNR_Key="97a292e965cf861efee2256850d5a2ec"
+getgenv().FNR_Config = {
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/fcdf7fe9bd2c382f2c006b3efb9d2eea.lua"))()
+    ---------- [ FARMING ] ----------
+    AutoFarm = true,
+    AutoQuest = true,
+    AutoStats = true,
+    AutoBuyWeapons = true,
+    AutoSaber = true,
+    AutoIchigo = true,
+    AutoHaki = true,
+    AutoHogyoku = true,
+    AutoAscend = true,
+    AutoSukuna = true,
+
+    ---------- [ ITEMS & CHEST ] ----------
+    AutoOpenChest = true,
+    OpenChests = {
+        "Common Chest",
+        "Rare Chest",
+        "Epic Chest",
+	"Mythical Chest",
+    },
+    AutoBlessing = true,
+
+    ---------- [ REROLL ] ----------
+    AutoReroll = true,
+    TargetRace = "Kitsune",
+    TargetClan = "",
+    AutoTraitReroll = true,
+    TargetTraitRarity = "Secret",
+    RerollOnlyWithTitle = true,
+    RerollRequiredTitle = "Destiny Marked",
+
+    ---------- [ TITLE & ACCESSORY ] ----------
+    AutoEquipTitle = true,
+    AutoEquipAccessory = true,
+
+    ---------- [ ARTIFACT & SKILL TREE ] ----------
+    AutoEquipArtifact = true,
+    AutoSkillTree = true,
+    SkillTreePriority = { "Luck", "Damage", "CritChance", "CritDamage", "HP" },
+    FullSkillTreeDamage = false,
+
+    ---------- [ MISC ] ----------
+    AutoRedeemCodes = true,
+    WebhookURL = "",
+
+    ---------- [ PERFORMANCE ] ----------
+    FPSBoost = true,
+    FPSLock = 10,
+}
+loadstring(game:HttpGet('https://api.fennirhub.net/scripts/b438352497eee0e138daa805f0702536'))()
