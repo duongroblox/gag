@@ -16,12 +16,12 @@ getgenv().Config = {
             }
         },
     },
-    WebHookURL = "",
+    WebHookURL = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
     WhitelistDefense = false, -- Auto Kick Accs If Detects Someone Else.
     KaitunLevelFarming = true, -- Fully Auto Made 375 Level.
     KeepLegFishes = false, -- Keep Leg. Fishes.
     HideUI = false,
-    FpsCap = 30,
+    FpsCap = 10,
     ServerHopLogic = false, -- This System Will Farm Peli, Then Server Hop For Fastest Merchant Spawn.
     AutoLeaveAfterASE = false -- Automaticly Leave After Get All Seeing Shamrock.
 }
