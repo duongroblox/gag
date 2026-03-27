@@ -1,60 +1,45 @@
-FNR_Key = "97a292e965cf861efee2256850d5a2ec"
+FNR_Key="97a292e965cf861efee2256850d5a2ec"
 getgenv().FNR_Config = {
-    ["Level"] = {
-        ["Auto Farm"] = true,
-        ["Level Cap"] = 375,
-    },
-    ["Misc Farm"] = {
-        ["Auto Buso"] = false,
-        ["Auto Geppo"] = true,
-        ["Auto World Scroll"] = false,
-    },
-    ["Auto Stats"] = {
-        ["Strength"] = 675,
-        ["Stamina"] = 0,
-        ["Defense"] = 1375,
-        ["GunMastery"] = 0,
-        ["SwordMastery"] = 0,
-    },
-    ["Fishing"] = {
-        ["Auto Farm"] = true,
-        ["Use Baits"] = {
-            ["Common Fish Bait"] = true,
-            ["Rare Fish Bait"] = true,
-            ["Legendary Fish Bait"] = true,
-        },
-        ["Auto Sell"] = { "Common Fish", "Rare Fish", "Legendary Fish" },
-        ["Craft Cap"] = 10,
-        ["Auto Craft"] = { "Legendary Fish" },
-    },
-    ["Merchant"] = {
-        ["Auto Farm"] = true,
-        ["Find For Banana Rod"] = true,
-        ["Items"] = {
-            ["All Seeing Shamrock"] = true,
-            ["Mythical Fruit Chest"] = true,
-            ["Merchants Banana Rod"] = true,
-        },
-    },
-    ["Private Code"] = "PutPrivateCode",
-    ["Multiple Private Code"] = {
-        ["Ps Code 1"] = "User1,User2",
-        ["Ps Code 2"] = "User3,User4",
-    },
-    ["Private Place"] = "First Sea",
-    ["Webhook Options"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
-        ["Send When Max Level"] = false,
-        ["Send When Max Peli"] = false,
-        ["Send When Go To Merchant"] = true,
-        ["Send When Got Banned"] = false,
-        ["Send When Private Code Invalid"] = false,
-        ["Ping Everyone"] = true,
-    },
-    ["Black Screen"] = true,
-    ["Low CPU"] = true,
-    ["Tween Speed"] = 40,
-    ["Auto ADS"] = true,
-}
 
-loadstring(game:HttpGet("https://api.fennirhub.net/scripts/1890189ac46875cec307ef51554087fb"))()
+    -- ── LEVEL SETTINGS ───────────────────────────────────
+    ["Level Cap"] = 375, -- Stop quest farming once this level is reached
+
+    -- ── PRIVATE SERVER CODE ──────────────────────────────
+    ["Private Code"] = "PutYourPrivateCode",
+    --[[
+        Configure multiple private server codes in a single file
+        + Each code must be written inside [""] = "",
+        + Each account must be separated by a comma
+
+        If no Private Code is specified, the script will automatically join a public server.
+        However, if a Private Code is provided but it is invalid, the script will NOT
+        fall back to a public server and will treat it as an invalid private code case.
+    ]]
+    ["Multiple Private Code"] = {
+        ["Ps Code 1"] = "User1,User2,User3",
+        ["Ps Code 2"] = "User4,User5,User6",
+    },
+
+    ["Auto Get Geppo"] = true, -- Learn Geppo (Sky Walk) first
+    ["Auto Get Buso"] = false, -- Learn Buso Haki after obtaining Geppo
+    ["World Scroll"] = false, -- Pick up World Scroll (requires level 325+)
+    ["Fishing"] = true, -- Farm money after completing the steps above
+    ["Merchant"] = true, -- Buy items from Merchant when enough money is available
+
+    -- ── STATS CAP ────────────────────────────────────────
+    -- Set to 0 to skip that stat
+    ["Auto Stats"] = {
+        ["Strength"] = 750,
+        ["Defense"] = 1275,
+    },
+
+    -- ── DISCORD ──────────────────────────────────────────
+    ["Webhook URL"] = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
+
+    -- ── OTHER FEATURES ───────────────────────────────────
+    ["Auto ADS"] = true, -- Automatically claim 2x EXP from ads
+
+    -- ── PERFORMANCE ──────────────────────────────────────
+    ["FPS Cap"] = 10,
+}
+loadstring(game:HttpGet('https://api.fennirhub.net/scripts/3cd4a32a62320bf6b2def1938bf22dbd'))()
