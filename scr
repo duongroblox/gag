@@ -1,44 +1,45 @@
-script_key="rbQOgCYMMBVaMrlHwRjdcgTkjpRpIUBv";
-getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
-    OpenChests       = {
-        "Common Chest",
-        "Rare Chest",
-        "Epic Chest",
-        "Legendary Chest",
+FNR_Key="97a292e965cf861efee2256850d5a2ec"
+getgenv().FNR_Config = {
+
+    -- ── LEVEL SETTINGS ───────────────────────────────────
+    ["Level Cap"] = 375, -- Stop quest farming once this level is reached
+
+    -- ── PRIVATE SERVER CODE ──────────────────────────────
+    ["Private Code"] = "PutYourPrivateCode",
+    --[[
+        Configure multiple private server codes in a single file
+        + Each code must be written inside [""] = "",
+        + Each account must be separated by a comma
+
+        If no Private Code is specified, the script will automatically join a public server.
+        However, if a Private Code is provided but it is invalid, the script will NOT
+        fall back to a public server and will treat it as an invalid private code case.
+    ]]
+    ["Multiple Private Code"] = {
+        ["Ps Code 1"] = "User1,User2,User3",
+        ["Ps Code 2"] = "User4,User5,User6",
     },
-    Debug            = false,
-    Performance = {
-        AutoRejoinIfHighRam = 5000,
-        WebhookURL      = "",
-        FPSBoost        = true,
-        FPSLock         = 10,
+
+    ["Auto Get Geppo"] = true, -- Learn Geppo (Sky Walk) first
+    ["Auto Get Buso"] = false, -- Learn Buso Haki after obtaining Geppo
+    ["World Scroll"] = false, -- Pick up World Scroll (requires level 325+)
+    ["Fishing"] = true, -- Farm money after completing the steps above
+    ["Merchant"] = true, -- Buy items from Merchant when enough money is available
+
+    -- ── STATS CAP ────────────────────────────────────────
+    -- Set to 0 to skip that stat
+    ["Auto Stats"] = {
+        ["Strength"] = 750,
+        ["Defense"] = 1275,
     },
-    SkillTree = {
-        Auto            = true,
-        Priority        = {"Luck", "Damage", "CritChance", "CritDamage", "HP"},
-    },
-    AutoStrongestMelee = true,
-    Reroll = {
-        Trait = {
-            Auto            = true,
-            TargetRarity    = "Secret",
-        },
-        TargetRace      = {"Kitsune"},
-        TargetClan      = {"Eminence", "Monarch"},
-        },
-    Artifact = {
-        AutoEquip       = true,
-        AutoUpgrade     = true,
-        AutoDeleteTrash = true,
-        UpgradeSet      = {"Celestial Rupture"},-- Ashen Chronicles, Crownless Regalia, Black Horizon, Void Reaver, Celestial Rupture, Abyssal Crown
-        UpgradeStopAt   = 15,
-        TrashRarities   = {"Common", "Rare", "Epic"},
-    },
+
+    -- ── DISCORD ──────────────────────────────────────────
+    ["Webhook URL"] = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
+
+    -- ── OTHER FEATURES ───────────────────────────────────
+    ["Auto ADS"] = true, -- Automatically claim 2x EXP from ads
+
+    -- ── PERFORMANCE ──────────────────────────────────────
+    ["FPS Cap"] = 10,
 }
-while true do
-    local success = pcall(function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1169527463a6fb002d07c345110bc0aa.lua"))()
-    end)
-    if success then break end
-    task.wait(5)
-end
+loadstring(game:HttpGet('https://api.fennirhub.net/scripts/3cd4a32a62320bf6b2def1938bf22dbd'))()
