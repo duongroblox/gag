@@ -1,45 +1,46 @@
-FNR_Key="97a292e965cf861efee2256850d5a2ec"
-getgenv().FNR_Config = {
+script_key="PAZBmvtfMnQuAYCiZidlnGftGCPGFtUp";
+setfpscap(10)
 
-    -- ── LEVEL SETTINGS ───────────────────────────────────
-    ["Level Cap"] = 375, -- Stop quest farming once this level is reached
+getgenv().sailorPieceConfig = {  
+    AUTO_UPDATE_RESTART = true,
+    ASCEND_UNTIL_LEVEL = 8,
 
-    -- ── PRIVATE SERVER CODE ──────────────────────────────
-    ["Private Code"] = "PutYourPrivateCode",
-    --[[
-        Configure multiple private server codes in a single file
-        + Each code must be written inside [""] = "",
-        + Each account must be separated by a comma
+    AUTO_INFINITE_TOWER = true,
+    DO_INFINITE_TOWER_MIN_KEY = 100, 
+    BUY_INFINITE_TOWER_SHOP = {"Cosmetic Crate", "Aura Crate"},
+    SET_AUTO_TOWER_RESET = 50,
 
-        If no Private Code is specified, the script will automatically join a public server.
-        However, if a Private Code is provided but it is invalid, the script will NOT
-        fall back to a public server and will treat it as an invalid private code case.
-    ]]
-    ["Multiple Private Code"] = {
-        ["Ps Code 1"] = "User1,User2,User3",
-        ["Ps Code 2"] = "User4,User5,User6",
-    },
+    MULTI_FARM = { "ArenaFighter", "Ninja", "Swordsman", "Quincy", "AcademyTeacher", "Slime", "Curse", "StrongSorcerer", "Hollow" },
+    DO_REPEATABLE_QUEST = "QuestNPC19",
+    AUTO_FARM = {},
+    SUMMON_BOSS = {},
 
-    ["Auto Get Geppo"] = true, -- Learn Geppo (Sky Walk) first
-    ["Auto Get Buso"] = false, -- Learn Buso Haki after obtaining Geppo
-    ["World Scroll"] = false, -- Pick up World Scroll (requires level 325+)
-    ["Fishing"] = true, -- Farm money after completing the steps above
-    ["Merchant"] = true, -- Buy items from Merchant when enough money is available
+    EQUIP_WEAPON = {"Strongest In History", "Ichigo", "Gryphon", "Dark Blade", "Katana"},
+    BUY_WEAPON = {"Katana", "Dark Blade", "Gryphon", "Ichigo", "Strongest In History", "Ice Queen"},
+    BLESS_WEAPON = { ["Ice Queen"] = 10, ["Strongest In History"] = 10, ["Ichigo"] = 6, ["Gryphon"] = 6, ["Dark Blade"] = 3 },
 
-    -- ── STATS CAP ────────────────────────────────────────
-    -- Set to 0 to skip that stat
-    ["Auto Stats"] = {
-        ["Strength"] = 750,
-        ["Defense"] = 1275,
-    },
+    REROLL_RACE_UNTIL = { "Luckborn" },
+    REROLL_CLAN_UNTIL = { "Eminence" },
+    REROLL_TRAIT_UNTIL = { "Emperor" },
+    REROLL_STAT_UNTIL = { ["Damage"] = "SSS", ["Defense"] = "SSS", ["CooldownReduction"] = "SSS", ["CritChance"] = "SSS", ["CritDamage"] = "SSS", ["DamageReduction"] = "SSS", ["Luck"] = "SSS" },
+    REROLL_PASSIVE_UNTIL = { ["Strongest In History"] = { "Fortune Chosen" } },
+    REROLL_POWER_UNTIL = { "Colossus" },
 
-    -- ── DISCORD ──────────────────────────────────────────
-    ["Webhook URL"] = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
+    DELETE_ARTIFACT_RARITY = { "Common", "Rare" },
+    EQUIP_ARTIFACT_SET = "Abyssal Crown",
 
-    -- ── OTHER FEATURES ───────────────────────────────────
-    ["Auto ADS"] = true, -- Automatically claim 2x EXP from ads
+    BUILD_MODE = "Luck",  -- Damage/Luck
+    USE_ITEM = { "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Aura Crate (Untradeable)", "Cosmetic Crate (Untradeable)", "Secret Chest (Untradeable)" },
+    BUY_MERCHANT = { "Race Reroll", "Trait Reroll", "Clan Reroll", "Passive Shard", "Boss Key", "Dungeon Key", "Rush Key", "Boss Ticket", "Haki Color Reroll", "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Mythical Chest", "Secret Chest" },
 
-    -- ── PERFORMANCE ──────────────────────────────────────
-    ["FPS Cap"] = 10,
+    -- Discord
+    WEBHOOK_ITEM_NAME = { "Aura Crate", "Cosmetic Crate" },
+    WEBHOOK_URL = "",
+    DISCORD_ID = "",
+    WEBHOOK_NOTE = "",
+    SHOW_PUBLIC_DISCORD_ID = true,
+    SHOW_WEBHOOK_USERNAME = true,
+    SHOW_WEBHOOK_JOBID = true,
 }
-loadstring(game:HttpGet('https://api.fennirhub.net/scripts/3cd4a32a62320bf6b2def1938bf22dbd'))()
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1c7ac2a2f86ecf894218a424a1be7667.lua"))()
