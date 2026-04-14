@@ -1,18 +1,16 @@
-repeat wait() until game:IsLoaded()
-while true do
-    setfpscap(5)
-    wait(10)
-end
-script_key="oqYUaHWfTgMsPCdUuOmMaeSpGmwHbZcf";
+repeat task.wait() until game:IsLoaded()
+setfpscap(5)
+script_key = "oqYUaHWfTgMsPCdUuOmMaeSpGmwHbZcf"
 getgenv().SailorVIP = {
     Optimization = {
-        Enable = true, -- On/Off toàn bộ optimization script
-        FPSCap = 10, -- Số FPS cần lock (ví dụ: 10, 15, 30, 60)
+        Enable = true,
+        FPSCap = 10,
     },
 
     Webhook = {
-        Enable = true, -- On/Off gửi webhook thông báo crate
-        URL = "https://discord.com/api/webhooks/1485463881496133715/ylffOEoY71RUesUZV7cvNx1idNqLFetqBd72fSgMXeh1rLsqQxU6i1yFellx1b4jOlfP", 
+        Enable = true,
+        URL = "https://discord.com/api/webhooks/1485463881496133715/ylffOEoY71RUesUZV7cvNx1idNqLFetqBd72fSgMXeh1rLsqQxU6i1yFellx1b4jOlfP",
     },
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/a8255d759144bb6127c5b72221cce5cd.lua"))()
