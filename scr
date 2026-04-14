@@ -1,4 +1,8 @@
-setfpscap(10)
+repeat wait() until game:IsLoaded()
+while true do
+    setfpscap(5)
+    wait(10)
+end
 script_key="oqYUaHWfTgMsPCdUuOmMaeSpGmwHbZcf";
 getgenv().SailorVIP = {
     Optimization = {
