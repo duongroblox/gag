@@ -3,13 +3,15 @@ setfpscap(10)
 
 getgenv().sailorPieceConfig = {  
     AUTO_UPDATE_RESTART = true,
+    FARM_SECRET_CHEST = true,
+    AUTO_BOSS_RUSH_AND_INFINITE_TOWER_STAT_BONUS = true,
     FAST_MULTI_FARM = true,
-    ASCEND_UNTIL_LEVEL = 10,
+    ASCEND_UNTIL_LEVEL = 5,
     AUTO_CELESTIAL_FAVOR_TITLE = true, -- Auto attack 5000 island bosses
     
     -- Autofarm
     DO_REPEATABLE_QUEST = "QuestNPC19",
-    MULTI_FARM = { "ArenaFighter", "Ninja", "Swordsman", "AcademyTeacher", "Slime", "StrongSorcerer", "Curse", "Hollow", "Sorcerer", "FrostRogue", "DesertMonkey", "Monkey", "Thief" },  -- Instant tp kill npc
+    MULTI_FARM = { "Bunny", "ArenaFighter", "Ninja", "Swordsman", "AcademyTeacher", "Slime", "StrongSorcerer", "Curse", "Hollow", "Sorcerer", "FrostRogue", "DesertMonkey", "Monkey", "Thief" },  -- Instant tp kill npc
     AUTO_FARM = {},  -- Auto farm ascend/quest/weapon bosses
     SUMMON_BOSS = {},  -- Auto summon ascend/quest/weapon bosses
     
@@ -36,7 +38,7 @@ getgenv().sailorPieceConfig = {
         ["Strongest In History"] = { "Fortune Chosen" }, 
         ["Ichigo"] = { "Fortune Chosen", "Executioner", "Rampage", "Damage V", "Damage IV" } 
     },
-    REROLL_POWER_UNTIL = { "Colossus" },
+    REROLL_POWER_UNTIL = { "Subjugator" },
 
     -- Artifact
     DELETE_ARTIFACT_RARITY = { "Common" },
@@ -55,7 +57,7 @@ getgenv().sailorPieceConfig = {
     WEBHOOK_ITEM_NAME = { "Aura Crate", "Cosmetic Crate", "Secret Chest" },
     WEBHOOK_URL = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
     DISCORD_ID = "473755357274046464",
-    WEBHOOK_NOTE = "Dew",
+    WEBHOOK_NOTE = "dew",
     SHOW_PUBLIC_DISCORD_ID = false,
     SHOW_WEBHOOK_USERNAME = false,
     SHOW_WEBHOOK_JOBID = true,
