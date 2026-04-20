@@ -1,66 +1,16 @@
-script_key="PAZBmvtfMnQuAYCiZidlnGftGCPGFtUp";
-setfpscap(10)
+script_key="oqYUaHWfTgMsPCdUuOmMaeSpGmwHbZcf";
 
-getgenv().sailorPieceConfig = {  
-    AUTO_UPDATE_RESTART = true,
-    FARM_SECRET_CHEST = true,
-    AUTO_BOSS_RUSH_AND_INFINITE_TOWER_STAT_BONUS = true,
-    FAST_MULTI_FARM = true,
-    ASCEND_UNTIL_LEVEL = 5,
-    AUTO_CELESTIAL_FAVOR_TITLE = true, -- Auto attack 5000 island bosses
-    
-    -- Autofarm
-    DO_REPEATABLE_QUEST = "QuestNPC19",
-    MULTI_FARM = { "Bunny", "ArenaFighter", "Ninja", "Swordsman", "AcademyTeacher", "Slime", "StrongSorcerer", "Curse", "Hollow", "Sorcerer", "FrostRogue", "DesertMonkey", "Monkey", "Thief" },  -- Instant tp kill npc
-    AUTO_FARM = {},  -- Auto farm ascend/quest/weapon bosses
-    SUMMON_BOSS = {},  -- Auto summon ascend/quest/weapon bosses
-    
-    -- Weapons
-    EQUIP_WEAPON = {"Strongest In History", "Ichigo", "Gryphon", "Dark Blade", "Katana"},
-    BUY_WEAPON = {"Katana", "Dark Blade", "Gryphon", "Ichigo", "Strongest In History", "Ice Queen"},
-    BLESS_WEAPON = { ["Ice Queen"] = 10, ["Strongest In History"] = 10, ["Ichigo"] = 6, ["Gryphon"] = 6, ["Dark Blade"] = 3 },
-
-    -- Reroll
-    REROLL_RACE_UNTIL = { "Luckborn" },
-    REROLL_CLAN_UNTIL = { "Eminence" },
-    REROLL_TRAIT_UNTIL = { "Emperor" },
-    REROLL_STAT_UNTIL = { 
-        ["Damage"] = "Z", 
-        ["Defense"] = "SS", 
-        ["CooldownReduction"] = "Z", 
-        ["CritChance"] = "SSS", 
-        ["CritDamage"] = "SSS", 
-        ["DamageReduction"] = "SS", 
-        ["Luck"] = "Z" 
+getgenv().SailorVIP = {
+    Optimization = {
+        Enable = false, -- On/Off toàn bộ optimization script
+        FPSCap = 5, -- Số FPS cần lock (ví dụ: 10, 15, 30, 60)
     },
-    REROLL_PASSIVE_UNTIL = { 
-        ["Ice Queen"] = { "Fortune Chosen", "Executioner", "Rampage" }, 
-        ["Strongest In History"] = { "Fortune Chosen" }, 
-        ["Ichigo"] = { "Fortune Chosen", "Executioner", "Rampage", "Damage V", "Damage IV" } 
+
+    Webhook = {
+        Enable = true, -- On/Off gửi webhook thông báo crate
+        URL = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5", 
     },
-    REROLL_POWER_UNTIL = { "Subjugator" },
 
-    -- Artifact
-    DELETE_ARTIFACT_RARITY = { "Common" },
-    EQUIP_ARTIFACT_SET = "Abyssal Crown",
-
-    -- Misc
-    BUILD_MODE = "Luck",  -- Damage/Luck
-    USE_ITEM = { "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Aura Crate (Untradeable)", "Cosmetic Crate (Untradeable)", "Secret Chest (Untradeable)" },
-    BUY_MERCHANT = { "Race Reroll", "Trait Reroll", "Clan Reroll", "Passive Shard", "Boss Key", "Dungeon Key", "Rush Key", "Boss Ticket", "Haki Color Reroll", "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Mythical Chest", "Secret Chest" },
-
-    -- Autotrade
-    TRADE_USERNAME = {},
-    TRADE_ITEM = {},
-    
-    -- Discord
-    WEBHOOK_ITEM_NAME = { "Aura Crate", "Cosmetic Crate", "Secret Chest" },
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1403463808457904169/33fyLI9QHvrnUeBIxks7bMeT5TaR8INc1IDOPiYqgqoEy40WGEZQodk9f0B1VgQ_EWD5",
-    DISCORD_ID = "473755357274046464",
-    WEBHOOK_NOTE = "dew",
-    SHOW_PUBLIC_DISCORD_ID = false,
-    SHOW_WEBHOOK_USERNAME = false,
-    SHOW_WEBHOOK_JOBID = true,
+    Auto_Atomic_and_Strongest_In_History_Mastery_F = false, -- true = tự farm Atomic + Strongest In History Mastery F khi đủ điều kiện | false = bỏ qua
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1c7ac2a2f86ecf894218a424a1be7667.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/a8255d759144bb6127c5b72221cce5cd.lua"))()
