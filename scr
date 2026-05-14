@@ -1,69 +1,166 @@
-script_key="ERwkEcvsmTYvLOhnZSOuCpUulVdWBGYP";
-setfpscap(10)
+repeat task.wait() until game:IsLoaded()
+task.wait(1)
+_G.TekkitConfig = {
+  -- Setting Tổng
+  AutoFarm = true,
+  AutoFarmOptions = {
+    "Open 2nd Chest",
+    "Mastery Farm",
+    "Close GUI",
+    "Fail Safe",
+    "Auto Execute"
+  },
 
-getgenv().sailorPieceConfig = {  
-    AUTO_UPDATE_RESTART = true,
-    WORLD = "Sea 1",  -- "Sea 1", "Sea 2" (Sea 2 ascension 5+ required)
-    ASCEND_UNTIL_LEVEL = 5,
-    AUTO_CELESTIAL_FAVOR_TITLE = true, -- Auto attack 5000 island bosses
-    AUTO_BOSS_RUSH_AND_INFINITE_TOWER_STAT_BONUS = false,
-    
-    -- Autofarm
-    DO_REPEATABLE_QUEST = "QuestNPC23",
-    -- MULTI_FARM -> Instant tp kill npc
-    MULTI_FARM = { "FastNinja", "StrongBandit", "StrongFighter", "Delinquent", "Bunny", "ArenaFighter", "Ninja", "Swordsman", "AcademyTeacher", "Slime", "StrongSorcerer", "Curse", "Hollow", "Sorcerer", "FrostRogue", "DesertBandit", "Monkey", "Thief" },  
-    -- Ascend/Quest/Weapon Requirements will auto summon + attack
-    AUTO_FARM = {},  -- Npc names
-    SUMMON_BOSS = {},  -- Boss npc names
-    
-    -- Weapons
-    -- Auto detect + equip BEST DPS Weapon + Damage Build for dungeon/inf tower/high hp bosses
-    -- Auto detect + equip BEST AOE Weapon for MULTI_FARM (Fast Farming)
-    -- BUY_WEAPON -> auto spawn/attack required bosses to unlock weapon
-    BUY_WEAPON = {"Katana", "Dark Blade", "Gryphon", "Ichigo", "Strongest In History"},
-    BLESS_WEAPON = { ["Strongest In History"] = 10, ["Ichigo"] = 6, ["Gryphon"] = 6, ["Dark Blade"] = 3 },
+  -- Auto Prestige
+  AutoPrestige = true,
+  PrestigeBoost = "Gold Boost",
+  PrestigeToStopAt = 5,
+  PrestigeGold1 = 200000000,
+  PrestigeGold2 = 400000000,
+  PrestigeGold3 = 600000000,
+  PrestigeGold4 = 800000000,
+  PrestigeGold5 = 1000000000,
 
-    -- Reroll
-    REROLL_RACE_UNTIL = { "Luckborn" },
-    REROLL_CLAN_UNTIL = { "Devil" },
-    REROLL_TRAIT_UNTIL = { "Emperor" },
-    REROLL_POWER_UNTIL = { "Subjugator" },
-    REROLL_BLOODLINE_UNTIL = { "Primordial" },
-    REROLL_STAT_UNTIL = { 
-        ["Damage"] = "Z", 
-        ["Defense"] = "SS", 
-        ["CooldownReduction"] = "Z", 
-        ["CritChance"] = "Z", 
-        ["CritDamage"] = "Z", 
-        ["DamageReduction"] = "Z", 
-        ["Luck"] = "Z" 
-    },
-    REROLL_PASSIVE_UNTIL = { 
-        ["Strongest In History"] = { "Fortune Chosen" }, 
-        ["Ichigo"] = { "Fortune Chosen", "Executioner", "Rampage", "Damage V", "Damage IV" }
-    },
+  -- Auto Farm Mission
+  AutoStart = true,
+  AutoStartType = "Missions",
+  AutoStartMap = "Utgard",
+  AutoStartObjective = "Defend",
+  AutoStartDifficulty = "Hardest",
+  AutoStartModifiers = {
+    "No Perks",
+    "No Skills",
+    "No Talents",
+    "Nightmare",
+    "Oddball",
+    "Injury Prone",
+    "Chronic Injuries",
+    "Fog",
+    "Glass Cannon",
+    "Time Trial"
+  },
 
-    -- Artifact
-    DELETE_ARTIFACT_RARITY = { "Common" },
-    EQUIP_ARTIFACT_SET = "Abyssal Crown",
+  --- Rejoin Hoặc Lỗi
+  AutoReload = true,
+  SafetyTime = 10,
+  AutoReturn = true,
+  ReturnAmount = 20,
+  StreakAmount = 10000,
+  StreakDie = true,
 
-    -- Misc
-    BUILD_MODE = "Luck",  -- Damage/Luck
-    USE_ITEM = { "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Aura Crate (Untradeable)", "Cosmetic Crate (Untradeable)", "Secret Chest (Untradeable)" },
-    BUY_MERCHANT = { "Race Reroll", "Trait Reroll", "Clan Reroll", "Passive Shard", "Boss Key", "Dungeon Key", "Rush Key", "Boss Ticket", "Haki Color Reroll", "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Mythical Chest", "Secret Chest" },
+  -- Auto Wave
+  WaveToDieAt = 95,
+  AutoWaveDie = false,
+  WavesRollBlessing = false,
+  WavesBuyUpgrades = false,
+  WavesAutoUpgrade = false,
+  WavesAutoSkip = false,
+  WavesGetCrates = false,
+  WavesUpgradesToBuy = {
+    "Max", --max hp for base
+    "Regen", --regens bases hp
+    "Replenish", --heals the base
+    "Refills", --this gives you more refills
+    "Revive" --this revives teammates
+  },
 
-    -- Autotrade
-    TRADE_USERNAME = {},
-    TRADE_ITEM = {},
-    
-    -- Discord
-    WEBHOOK_ITEM_NAME = { "Aura Crate", "Cosmetic Crate", "Secret Chest" },
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1485463881496133715/ylffOEoY71RUesUZV7cvNx1idNqLFetqBd72fSgMXeh1rLsqQxU6i1yFellx1b4jOlfP",
-    DISCORD_ID = "473755357274046464",
-    WEBHOOK_NOTE = "DEW",
-    SHOW_PUBLIC_DISCORD_ID = false,
-    SHOW_WEBHOOK_USERNAME = false,
-    SHOW_WEBHOOK_JOBID = false,
+  -- Nhận quà
+  ClaimQuests = true,
+  ClaimAchievements = true,
+
+  -- Sử dụng Skill
+  UseSkills = false,
+  EquipSkills = true,
+  Skills = {
+    "Drill Thrust",
+    "Torrential Steel",
+    "Let it RIP",
+    "Red Flare",
+    "Black Flare",
+    "Order: Rage",
+    "Rage Mode"
+  },
+
+  -- Lấy Spear
+  AutoSpearQuests = true,
+  EquipSpears = true,
+
+  -- Perk
+  EnhancePerk = true,
+  PerkToEnhance = "Carnifex",
+  PerksToUse = {
+    "Common",
+    "Rare",
+    "Epic",
+    "Legendary"
+  },
+  EquipPerks = true,
+
+  BodySlot = "Perfect Form",
+  OffenseSlot = "",
+  DefenseSlot = "",
+  SupportSlot = "",
+  DeletePerks = false,
+  RarityToDelete = {
+    "Common",
+    "Rare",
+    "Epic"
+  },
+
+  -- Nâng cấp
+  UpgradeGear = true,
+  AutoSkillTree = true,
+  LeftPath = "Skill Cooldown",
+  MiddlePath = "Damage",
+  RightPath = "Damage Reduction",
+  PathPriority = "Middle",
+
+  -- roll family
+  RollCooldown = 3,
+  RollFamily = false,
+
+  -- boosts
+  BuyBoosts = true,
+  Boosts = {
+    "2x Gold Boost [2h]"
+  },
+  ItemToBuyWith = "Canes",
+
+  -- general settings
+  HoverHeight = 265,
+  HoverSpeed = 300,
+  NoTitanLag = true,
+  TitanEsp = false,
+  NapeExtend = false,
+  DisableRendering = true,
+
+  -- webhook
+  Webhook = true,
+  WebhookLink = "https://discord.com/api/webhooks/1479906229664088136/knytn_rfTcP3o2WAX2wUXaR4Hypmd5VPO044b2IiblvyvPe7boTfIqZkK8pcbwhquu-n",
+  ShowUsername = true,
+  SendSafetyUpdate = false,
+
+  -- rejoin for titan skins
+  OnikiriRejoin = false,
+  DeusRejoin = false,
+  JotunnRejoin = false,
+
+  -- server rejoining
+  PrivateServerCode = "",
+  LeaveIfMorePlayers = true,
+  AutoSelectSlot = true,
+  Slot = "A",
+
+  --selling
+  SellSerums = false,
+  AttackSerums = 5,
+  FemaleSerums = 5,
+  ArmoredSerums = 5,
+  ColossalSerums = 5,
+
+  SellAllCosmetics = false,
+  CosmeticMax = 20,
+
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1c7ac2a2f86ecf894218a424a1be7667.lua"))()
+script_key = "ibnQcvNSKfgzVORGdkWSBUXgIEHvDrdo"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/5bfd68232034676923088ca8b6698be7.lua"))()
