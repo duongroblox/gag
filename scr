@@ -1,166 +1,138 @@
-repeat task.wait() until game:IsLoaded()
-task.wait(1)
-_G.TekkitConfig = {
-  -- Setting Tổng
-  AutoFarm = true,
-  AutoFarmOptions = {
-    "Open 2nd Chest",
-    "Mastery Farm",
-    "Close GUI",
-    "Fail Safe",
-    "Auto Execute"
-  },
+task.wait(3)
+script_key="ZfxWzpSEDtHuTlRGRsvjamaPUtOiJtAS";
+getgenv().Config = {
+    ["Performance"] = {
+        ["FPS Cap"] = 10,
+    },
 
-  -- Auto Prestige
-  AutoPrestige = true,
-  PrestigeBoost = "Gold Boost",
-  PrestigeToStopAt = 5,
-  PrestigeGold1 = 200000000,
-  PrestigeGold2 = 400000000,
-  PrestigeGold3 = 600000000,
-  PrestigeGold4 = 800000000,
-  PrestigeGold5 = 1000000000,
+    ["Auto Raid"] = {
+        ["Enabled"] = true,
+        ["Map"] = "Utgard",
+        ["Objective"] = "Defend",
+        ["Difficulty"] = "Aberrant",
+    },
 
-  -- Auto Farm Mission
-  AutoStart = true,
-  AutoStartType = "Missions",
-  AutoStartMap = "Utgard",
-  AutoStartObjective = "Defend",
-  AutoStartDifficulty = "Hardest",
-  AutoStartModifiers = {
-    "No Perks",
-    "No Skills",
-    "No Talents",
-    "Nightmare",
-    "Oddball",
-    "Injury Prone",
-    "Chronic Injuries",
-    "Fog",
-    "Glass Cannon",
-    "Time Trial"
-  },
+    ["TargetFamily"] = {
+        ["Enabled"] = false,
+        ["Targets"] = { "Helos", "Fritz" },
+        ["Store"] = {"Fritz", "Helos"},
 
-  --- Rejoin Hoặc Lỗi
-  AutoReload = true,
-  SafetyTime = 10,
-  AutoReturn = true,
-  ReturnAmount = 20,
-  StreakAmount = 10000,
-  StreakDie = true,
+        ["Seconds Between Spins"] = 1,
+        ["Start When Spins At Least"] = 400,
+        ["Refill Spins To"] = 0,
+        ["Stop When No Spins Left"] = false,
 
-  -- Auto Wave
-  WaveToDieAt = 95,
-  AutoWaveDie = false,
-  WavesRollBlessing = false,
-  WavesBuyUpgrades = false,
-  WavesAutoUpgrade = false,
-  WavesAutoSkip = false,
-  WavesGetCrates = false,
-  WavesUpgradesToBuy = {
-    "Max", --max hp for base
-    "Regen", --regens bases hp
-    "Replenish", --heals the base
-    "Refills", --this gives you more refills
-    "Revive" --this revives teammates
-  },
+        ["BuySpins"] = false,
+        ["Max Spins To Buy"] = 400,
+        ["Seconds Between Purchases"] = 5,
+    },
 
-  -- Nhận quà
-  ClaimQuests = true,
-  ClaimAchievements = true,
+    ["Modifiers"] = {
+        ["No Perks"] = false,
+        ["No Skills"] = true,
+        ["No Memories"] = true,
+        ["Nightmare"] = true,
+        ["Oddball"] = true,
+        ["Injury Prone"] = true,
+        ["Chronic Injuries"] = true,
+        ["Fog"] = true,
+        ["Time Trial"] = true,
+        ["Glass Cannon"] = true,
+        ["Boring"] = false,
+        ["Simple"] = false,
+    },
 
-  -- Sử dụng Skill
-  UseSkills = false,
-  EquipSkills = true,
-  Skills = {
-    "Drill Thrust",
-    "Torrential Steel",
-    "Let it RIP",
-    "Red Flare",
-    "Black Flare",
-    "Order: Rage",
-    "Rage Mode"
-  },
+    ["Auto Boosts"] = {
+        ["Auto Rebuy"] = true,
+        ["Min Canes Keep"] = 0,
+        ["Items"] = {
+            ["XP"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
+            ["Gold"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
+            ["Luck"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
+        },
+    },
 
-  -- Lấy Spear
-  AutoSpearQuests = true,
-  EquipSpears = true,
+    ["Auto Sell Items"] = {
+        ["Enabled"] = true,
+        ["Seconds Between Checks"] = 30,
+        ["Min Quantity Keep"] = 1,
+        ["Max Items Per Check"] = 8,
+        ["Rarities"] = {
+            ["Common"] = true,
+            ["Uncommon"] = true,
+            ["Rare"] = true,
+            ["Epic"] = true,
+            ["Legendary"] = true,
+            ["Mythic"] = false,
+            ["Exclusive"] = false,
+        },
+        ["Names"] = {
+            -- "Wizard Hat",
+            -- "Kitsune Ribbon",
+        },
+    },
 
-  -- Perk
-  EnhancePerk = true,
-  PerkToEnhance = "Carnifex",
-  PerksToUse = {
-    "Common",
-    "Rare",
-    "Epic",
-    "Legendary"
-  },
-  EquipPerks = true,
+    ["Auto Redeem Codes"] = {
+        ["Enabled"] = true,
+        ["Only At Title Screen"] = false,
+        ["Seconds Between Codes"] = 1,
+        ["Save Failed"] = true,
+        ["Codes"] = {
+            "FREECODE6",
+            "FREECODE5",
+            "FREECODE4",
+            "LIKES1M200K",
+            "VISITS800M",
+            "TERRA70K",
+            "PLAYERS100K",
+            "VISITS600M",
+            "VISITS700M",
+            "FAVORITES1M",
+            "MEMBERS900K",
+            "MEMBERS1M",
+            "UPDATE4",
+            "LIKES1M150K",
+            "FREECODE3",
+            "LIKES1M100K",
+            "THANKSFORSTAYINGWITHUS",
+            "CHRISTMAS2025",
+            "LIKES1M",
+        },
+    },
 
-  BodySlot = "Perfect Form",
-  OffenseSlot = "",
-  DefenseSlot = "",
-  SupportSlot = "",
-  DeletePerks = false,
-  RarityToDelete = {
-    "Common",
-    "Rare",
-    "Epic"
-  },
+    ["Auto Skip Cutscene"] = true,
 
-  -- Nâng cấp
-  UpgradeGear = true,
-  AutoSkillTree = true,
-  LeftPath = "Skill Cooldown",
-  MiddlePath = "Damage",
-  RightPath = "Damage Reduction",
-  PathPriority = "Middle",
+    ["Anti AFK"] = true,
 
-  -- roll family
-  RollCooldown = 3,
-  RollFamily = false,
+    ["Auto Close Roblox"] = {
+        ["Enabled"] = false,
+        ["Minutes"] = 60,
+    },
 
-  -- boosts
-  BuyBoosts = true,
-  Boosts = {
-    "2x Gold Boost [2h]"
-  },
-  ItemToBuyWith = "Canes",
+    ["Auto Prestige"] = {
+        ["Enabled"] = true,
+        ["Stop At"] = 3,
+        ["Gold Required"] = {
+            [0] = "200M",
+            [1] = "400M",
+            [2] = "600M",
+            [3] = "800M",
+            [4] = "1B",
+        },
+    },
 
-  -- general settings
-  HoverHeight = 265,
-  HoverSpeed = 300,
-  NoTitanLag = true,
-  TitanEsp = false,
-  NapeExtend = false,
-  DisableRendering = true,
+    ["Webhook"] = {
+        ["URL"] = "https://discord.com/api/webhooks/1505876445954703381/uOCjcL0XVxgm4wlcrXCdGMryqMagWFcnO05BIPpMD71eUowJQ0x5uc9krEiaAJQ7U2mb",
+        ["Ping User ID"] = "402895905986052106",
+        ["Ping On Every Mission"] = true,
+    },
 
-  -- webhook
-  Webhook = true,
-  WebhookLink = "https://discord.com/api/webhooks/1479906229664088136/knytn_rfTcP3o2WAX2wUXaR4Hypmd5VPO044b2IiblvyvPe7boTfIqZkK8pcbwhquu-n",
-  ShowUsername = true,
-  SendSafetyUpdate = false,
-
-  -- rejoin for titan skins
-  OnikiriRejoin = false,
-  DeusRejoin = false,
-  JotunnRejoin = false,
-
-  -- server rejoining
-  PrivateServerCode = "",
-  LeaveIfMorePlayers = true,
-  AutoSelectSlot = true,
-  Slot = "A",
-
-  --selling
-  SellSerums = false,
-  AttackSerums = 5,
-  FemaleSerums = 5,
-  ArmoredSerums = 5,
-  ColossalSerums = 5,
-
-  SellAllCosmetics = false,
-  CosmeticMax = 20,
-
+    ["Spin Webhook"] = {
+        ["URL"] = "",
+        ["Ping User ID"] = "",
+        ["Ping On Hit"] = false,
+    },
 }
-script_key = "ibnQcvNSKfgzVORGdkWSBUXgIEHvDrdo"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/5bfd68232034676923088ca8b6698be7.lua"))()
+
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/eb9db1d2459caf7d3b9517de4ce892fc.lua"))()
