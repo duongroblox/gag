@@ -69,6 +69,7 @@ getgenv().Config = {
         ["Names"] = {
             -- "Wizard Hat",
             -- "Kitsune Ribbon",
+	    -- "Angel's Halo",
         },
     },
 
@@ -113,17 +114,17 @@ getgenv().Config = {
         ["Enabled"] = true,
         ["Stop At"] = 3,
         ["Gold Required"] = {
-            [0] = "200M",
-            [1] = "400M",
-            [2] = "600M",
-            [3] = "800M",
-            [4] = "1B",
+            [1] = "200M", -- P0 -> P1
+            [2] = "400M", -- P1 -> P2
+            [3] = "600M", -- P2 -> P3
+            [4] = "800M", -- P3 -> P4
+            [5] = "1B",   -- P4 -> P5
         },
     },
 
     ["Webhook"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1505876445954703381/uOCjcL0XVxgm4wlcrXCdGMryqMagWFcnO05BIPpMD71eUowJQ0x5uc9krEiaAJQ7U2mb",
-        ["Ping User ID"] = "402895905986052106",
+        ["URL"] = "https://discord.com/api/webhooks/1479906229664088136/knytn_rfTcP3o2WAX2wUXaR4Hypmd5VPO044b2IiblvyvPe7boTfIqZkK8pcbwhquu-n",
+        ["Ping User ID"] = "473755357274046464",
         ["Ping On Every Mission"] = true,
     },
 
