@@ -48,7 +48,7 @@ getgenv().Config = {
         ["Items"] = {
             ["XP"] = { ["30m"] = false, ["1h"] = false, ["2h"] = false },
             ["Gold"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
-            ["Luck"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
+            ["Luck"] = { ["30m"] = false, ["1h"] = false, ["2h"] = false },
         },
     },
 
