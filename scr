@@ -46,7 +46,7 @@ getgenv().Config = {
         ["Auto Rebuy"] = true,
         ["Min Canes Keep"] = 0,
         ["Items"] = {
-            ["XP"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
+            ["XP"] = { ["30m"] = false, ["1h"] = false, ["2h"] = false },
             ["Gold"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
             ["Luck"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
         },
