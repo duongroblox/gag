@@ -3,6 +3,8 @@ script_key="ZfxWzpSEDtHuTlRGRsvjamaPUtOiJtAS";
 getgenv().Config = {
     ["Performance"] = {
         ["FPS Cap"] = 10,
+        ["Show Dashboard"] = true,
+        ["Black Screen"] = true,
     },
 
     ["Auto Raid"] = {
@@ -44,7 +46,7 @@ getgenv().Config = {
 
     ["Auto Boosts"] = {
         ["Auto Rebuy"] = true,
-        ["Min Canes Keep"] = 0,
+        ["Min Gems Keep"] = 0,
         ["Items"] = {
             ["XP"] = { ["30m"] = false, ["1h"] = false, ["2h"] = false },
             ["Gold"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
@@ -63,13 +65,13 @@ getgenv().Config = {
             ["Rare"] = true,
             ["Epic"] = true,
             ["Legendary"] = true,
-            ["Mythic"] = false,
+            ["Mythic"] = true,
             ["Exclusive"] = false,
         },
         ["Names"] = {
             -- "Wizard Hat",
             -- "Kitsune Ribbon",
-	    -- "Angel's Halo",
+	    -- "Nightfall",
         },
     },
 
@@ -79,6 +81,7 @@ getgenv().Config = {
         ["Seconds Between Codes"] = 1,
         ["Save Failed"] = true,
         ["Codes"] = {
+            "LIKES1M250K",
             "FREECODE6",
             "FREECODE5",
             "FREECODE4",
@@ -113,11 +116,12 @@ getgenv().Config = {
     ["Auto Prestige"] = {
         ["Enabled"] = true,
         ["Stop At"] = 5,
+        ["Keep Memory Scrolls"] = 9999,
         ["Gold Required"] = {
             [1] = "1M", -- P0 -> P1
             [2] = "1M", -- P1 -> P2
             [3] = "1M", -- P2 -> P3
-            [4] = "500M", -- P3 -> P4
+            [4] = "800M", -- P3 -> P4
             [5] = "1B",   -- P4 -> P5
         },
     },
