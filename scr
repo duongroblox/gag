@@ -9,8 +9,8 @@ getgenv().Config = {
 
     ["Auto Raid"] = {
         ["Enabled"] = true,
-        ["Map"] = "Utgard",
-        ["Objective"] = "Defend",
+        ["Map"] = "Shiganshina",
+        ["Objective"] = "Breach",
         ["Difficulty"] = "Aberrant",
     },
 
@@ -65,13 +65,12 @@ getgenv().Config = {
             ["Rare"] = true,
             ["Epic"] = true,
             ["Legendary"] = true,
-            ["Mythic"] = true,
+            ["Mythic"] = false,
             ["Exclusive"] = false,
         },
         ["Names"] = {
             -- "Wizard Hat",
             -- "Kitsune Ribbon",
-	    -- "Nightfall",
         },
     },
 
@@ -79,7 +78,7 @@ getgenv().Config = {
         ["Enabled"] = true,
         ["Only At Title Screen"] = false,
         ["Seconds Between Codes"] = 1,
-        ["Save Failed"] = true,
+        ["Save Failed"] = false,
         ["Codes"] = {
             "LIKES1M250K",
             "FREECODE6",
@@ -116,7 +115,6 @@ getgenv().Config = {
     ["Auto Prestige"] = {
         ["Enabled"] = true,
         ["Stop At"] = 5,
-        ["Keep Memory Scrolls"] = 9999,
         ["Gold Required"] = {
             [1] = "1M", -- P0 -> P1
             [2] = "1M", -- P1 -> P2
