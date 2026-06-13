@@ -1,141 +1,134 @@
-task.wait(3)
-script_key="ZfxWzpSEDtHuTlRGRsvjamaPUtOiJtAS";
 getgenv().Config = {
-    ["Performance"] = {
-        ["FPS Cap"] = 10,
-        ["Show Dashboard"] = true,
-        ["Black Screen"] = true,
+    ["Planting"] = {
+        ["Seeds To Plant"] = {
+    ["Carrot"]=50,
+    ["Strawberry"]=30,
+    ["Blueberry"]=25,
+    ["Tulip"]=10,
+    ["Tomato"]=40,
+    ["Apple"]=25,
+
+    ["Bamboo"]=60,
+    ["Corn"]=25,
+    ["Cactus"]=25,
+    ["Pineapple"]=25,
+    ["Mushroom"]=35,
+    ["Green Bean"]=25,
+    ["Banana"]=25,
+
+    ["Grape"]=35,
+    ["Coconut"]=35,
+    ["Mango"]=35,
+    ["Dragon Fruit"]=35,
+
+    ["Acorn"]=20,
+    ["Cherry"]=20,
+    ["Sunflower"]=25,
+    ["Venus Fly Trap"]=30,
+    ["Pomegranate"]=30,
+    ["Poison Apple"]=25,
+    ["Moon Bloom"]=30,
+    ["Dragon's Breath"]=30,
+    ["Ghost Pepper"]=30,
+    ["Poison Ivy"]=25,
+    ["Baby Cactus"]=20,
+    ["Glow Mushroom"]=30,
+
+    ["Romanesco"]=35,
+    ["Horned Melon"]=35,
+},
+        ["Auto Buy Seeds"]= true,
+        ["Auto Plant"]= true,
+        ["Auto Upgrade Crops"]= true,
+        ["Expand Garden"]= true,
+    	["Collect Seed Packs"]= true,
     },
 
-    ["Auto Raid"] = {
-        ["Enabled"] = true,
-        ["Map"] = "Shiganshina",
-        ["Objective"] = "Breach",
-        ["Difficulty"] = "Aberrant",
+    ["Harvest"] = {
+        ["Auto Harvest"]=true,
+        ["Auto Sell"]=true,
+        ["Keep Mutated"]=false,
+        ["Wait For Mutations"]={},
+        ["Keep Favorites"]={"Bamboo Seed"},
     },
 
-    ["TargetFamily"] = {
-        ["Enabled"] = false,
-        ["Targets"] = { "Helos", "Fritz" },
-        ["Store"] = {"Fritz", "Helos"},
-
-        ["Seconds Between Spins"] = 1,
-        ["Start When Spins At Least"] = 400,
-        ["Refill Spins To"] = 0,
-        ["Stop When No Spins Left"] = false,
-
-        ["BuySpins"] = false,
-        ["Max Spins To Buy"] = 400,
-        ["Seconds Between Purchases"] = 5,
+    ["Gears"] = {
+        ["Use Sprinklers"]=true,
+        ["Use Watering Can"]=true,
+        ["Buy Gears"]=true,
+        ["Gears To Buy"]={},
+        ["Gears To Use"]={},
     },
 
-    ["Modifiers"] = {
-        ["No Perks"] = false,
-        ["No Skills"] = true,
-        ["No Memories"] = true,
-        ["Nightmare"] = true,
-        ["Oddball"] = true,
-        ["Injury Prone"] = true,
-        ["Chronic Injuries"] = true,
-        ["Fog"] = true,
-        ["Time Trial"] = true,
-        ["Glass Cannon"] = true,
-        ["Boring"] = false,
-        ["Simple"] = false,
-    },
-
-    ["Auto Boosts"] = {
-        ["Auto Rebuy"] = true,
-        ["Min Gems Keep"] = 0,
-        ["Items"] = {
-            ["XP"] = { ["30m"] = false, ["1h"] = false, ["2h"] = false },
-            ["Gold"] = { ["30m"] = true, ["1h"] = false, ["2h"] = false },
-            ["Luck"] = { ["30m"] = false, ["1h"] = false, ["2h"] = false },
+    ["Pets"] = {
+        ["Enable"]=true,
+        ["Buy Wild Pets"]=true,
+        ["Equip Best Pets"]=true,
+        ["Open Eggs"]=false,
+        ["Pets To Buy"]={
+            "GoldenDragonfly",
+            "Unicorn",
+            "Monkey",
+            "Raccoon",
+            "BlackDragon",
+            "IceSerpent",
+            "Robin",
+            "Bee",
+            "Deer"
+        },
+        ["Pets To Equip"]={
+            "GoldenDragonfly",
+            "Unicorn",
+            "Monkey",
+            "Raccoon",
+            "BlackDragon",
+            "IceSerpent",
+            "Robin",
+            "Bee",
+            "Deer"
         },
     },
+["Mail"] = {
+    ["Enabled"]=true,
+    ["Send To Username"]="baovagau123u",
+    ["Note"]="",
+    ["Mail Instead Of Sell"]=false,
 
-    ["Auto Sell Items"] = {
-        ["Enabled"] = true,
-        ["Seconds Between Checks"] = 30,
-        ["Min Quantity Keep"] = 1,
-        ["Max Items Per Check"] = 8,
-        ["Rarities"] = {
-            ["Common"] = true,
-            ["Uncommon"] = true,
-            ["Rare"] = true,
-            ["Epic"] = true,
-            ["Legendary"] = true,
-            ["Mythic"] = false,
-            ["Exclusive"] = false,
-        },
-        ["Names"] = {
-            -- "Wizard Hat",
-            -- "Kitsune Ribbon",
-        },
+    ["Mail Fruits"]=false,
+    ["Only These Fruits"]={ "Bamboo" },
+    ["Min Fruits To Send"]=10,
+
+    ["Mail Seeds"]=true,
+    ["Seeds To Mail"]={ "Bamboo Seed" },
+
+    ["Mail Pets"]=true,
+    ["Pets To Mail"]={
+        "GoldenDragonfly",
+        "Unicorn",
+        "Raccoon",
+        "Monkey"
     },
-
-    ["Auto Redeem Codes"] = {
-        ["Enabled"] = true,
-        ["Only At Title Screen"] = false,
-        ["Seconds Between Codes"] = 1,
-        ["Save Failed"] = false,
-        ["Codes"] = {
-            "LIKES1M250K",
-            "FREECODE6",
-            "FREECODE5",
-            "FREECODE4",
-            "LIKES1M200K",
-            "VISITS800M",
-            "TERRA70K",
-            "PLAYERS100K",
-            "VISITS600M",
-            "VISITS700M",
-            "FAVORITES1M",
-            "MEMBERS900K",
-            "MEMBERS1M",
-            "UPDATE4",
-            "LIKES1M150K",
-            "FREECODE3",
-            "LIKES1M100K",
-            "THANKSFORSTAYINGWITHUS",
-            "CHRISTMAS2025",
-            "LIKES1M",
-        },
-    },
-
-    ["Auto Skip Cutscene"] = true,
-
-    ["Anti AFK"] = true,
-
-    ["Auto Close Roblox"] = {
-        ["Enabled"] = false,
-        ["Minutes"] = 60,
-    },
-
-    ["Auto Prestige"] = {
-        ["Enabled"] = true,
-        ["Stop At"] = 5,
-        ["Gold Required"] = {
-            [1] = "100M", -- P0 -> P1
-            [2] = "200M", -- P1 -> P2
-            [3] = "400M", -- P2 -> P3
-            [4] = "600M", -- P3 -> P4
-            [5] = "800N",   -- P4 -> P5
-        },
+},
+    ["Codes"] = {
+        ["Auto Redeem"]=true,
+        ["List"]={ "TEAMGREENBEAN" }
     },
 
     ["Webhook"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1479906229664088136/knytn_rfTcP3o2WAX2wUXaR4Hypmd5VPO044b2IiblvyvPe7boTfIqZkK8pcbwhquu-n",
-        ["Ping User ID"] = "473755357274046464",
-        ["Ping On Every Mission"] = true,
+        ["Enabled"]=true,
+        ["Your Discord ID"]="473755357274046464",
+    ["Your Private Webhook"]="https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
+        ["Only These"]={ "Mythic", "Super" }
     },
 
-    ["Spin Webhook"] = {
-        ["URL"] = "",
-        ["Ping User ID"] = "",
-        ["Ping On Hit"] = false,
+    ["Anti AFK"] = {
+        ["Enabled"]=true
+    },
+
+    ["Performance"] = {
+        ["Enabled"]=true,
+        ["FPS Cap"]=5
     },
 }
 
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/eb9db1d2459caf7d3b9517de4ce892fc.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/58ea2baa5f6765b3945bed56f6d2319b.lua"))()
