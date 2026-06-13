@@ -49,7 +49,7 @@ getgenv().Config = {
         ["Auto Sell"]=true,
         ["Keep Mutated"]=false,
         ["Wait For Mutations"]={},
-        ["Keep Favorites"]={"Bamboo Seed", "Gold Seed" , "Rainbow Seed"},
+        ["Keep Favorites"]={"Bamboo Seed", "Rainbow Seed", "Gold Seed"},
     },
 
     ["Gears"] = {
@@ -99,7 +99,7 @@ getgenv().Config = {
     ["Min Fruits To Send"]=10,
 
     ["Mail Seeds"]=true,
-    ["Seeds To Mail"]={ "Bamboo Seed" , "Gold Seed" , "Rainbow Seed" },
+    ["Seeds To Mail"]={"Bamboo Seed", "Rainbow Seed", "Gold Seed"},
 
     ["Mail Pets"]=true,
     ["Pets To Mail"]={
