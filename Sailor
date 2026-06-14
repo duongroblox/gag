@@ -1,34 +1,104 @@
-script_key="gsPzKFMxllrpfVFBhEsHlGUoBaQJTvmq";
-setfpscap(15)
-
-getgenv().sailorPieceConfig = {
-    TEST_OPTI = true,
+setfpscap(10)
+script_key="UKiyDuTDzkMqbedvYRyNCPLYTjCulRyE";
+getgenv().GAG2Config = {
     AUTO_UPDATE_RESTART = true,
-    FARM_UNTIL_LEVEL = 13000,
-    AUTO_FARM = { "Jinwoo Boss", "Alucard Boss", "Yuji Boss", "Gojo Boss", "Sukuna Boss", "Anos Boss", "Aizen Boss", "Strongest of Today Boss", "Strongest in History Boss", "Rimuru Boss", "Saber Boss", "QinShi Boss", "Ichigo Boss", "Swordsman" },
-    SUMMON_BOSS = { "Ichigo", "Qin Shi", "Saber" },
 
-    EQUIP_SWORD = { "Ichigo", "Gryphon", "Dark Blade", "Katana" },
-    BLESS_WEAPON = { ["Ichigo"] = 12, ["Gryphon"] = 6, ["Dark Blade"] = 3 },
+    BUY_PET = {  -- ["Pet Name"] = Amount
+        ["Monkey"] = 0, 
+        ["Bee"] = 99, 
+        ["Black Dragon"] = 99, 
+        ["Golden Dragonfly"] = 99, 
+        ["Unicorn"] = 99, 
+        ["Raccoon"] = 99, 
+        ["Ice Serpent"] = 99,
 
-    STAT_POINT_PERCENTAGE = { ["Sword"] = 90, ["Defense"] = 10, ["Melee"] = 0, ["Power"] = 0 },
-    USE_ITEM = { "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Mythical Chest" },
-    BUY_MERCHANT = {},
+        ["Robin"] = 5,
+        ["Deer"] = 5,
+    },
 
-    REROLL_RACE_UNTIL = { "Warlord", "Sunborn", "Servant", "Kitsune", "Swordblessed", "Galevorn", "Leviathan", "Oni", "Slime" },
-    REROLL_CLAN_UNTIL = { "Pride", "Monarch", "Alter", "Espada", "Voldigoat", "Eminence" },
-    REROLL_TRAIT_UNTIL = { "Overlord", "Cataclysm", "Singularity", "Celestial", "Emperor" },
-    REROLL_STAT_UNTIL = { ["Damage"] = "S", ["Defense"] = "S", ["CooldownReduction"] = "S", ["CritChance"] = "S", ["CritDamage"] = "S", ["DamageReduction"] = "S", ["Luck"] = "SSS" },
-    REROLL_PASSIVE_UNTIL = { ["Gryphon"] = { "Fortune Chosen", "Executioner", "Damage V" }, ["Ichigo"] = { "Fortune Chosen", "Executioner", "Damage V" } },
+    EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
+        {"Unicorn", 5, 1}, 
+        {"Golden Dragonfly", 10, 2},
+        {"Robin", 5, 3},
+        {"Deer", 5, 4},
+    },
+
+    PLANT_SEED = {  -- ["Seed Name"] = Amount
+        ["Carrot"] = 10, 
+        ["Strawberry"] = 4,
+        ["Blueberry"] = 4,
+        ["Tulip"] = 4,
+        ["Tomato"] = 4,
+        ["Apple"] = 4,
+        ["Bamboo"] = 0,
+        ["Corn"] = 4,
+        ["Cactus"] = 4,
+        ["Pineapple"] = 4,
+        ["Mushroom"] = 50,
+        ["Green Bean"] = 50,
+        ["Banana"] = 50,
+        ["Grape"] = 50,
+        ["Coconut"] = 50,
+        ["Mango"] = 50,
+        ["Dragon Fruit"] = 50,
+        ["Acorn"] = 50,
+        ["Cherry"] = 50,
+        ["Sunflower"] = 50,
+        ["Venus Fly Trap"] = 0,
+        ["Pomegranate"] = 0,
+        ["Poison Apple"] = 0,
+        ["Moon Bloom"] = 0,
+        ["Dragon's Breath"] = 0,
+    },
+
+    BUY_SEED = {  -- ["Seed Name"] = Amount
+        ["Carrot"] = 10, 
+        ["Strawberry"] = 4,
+        ["Blueberry"] = 4,
+        ["Tulip"] = 4,
+        ["Tomato"] = 4,
+        ["Apple"] = 4,
+        ["Bamboo"] = 999,
+        ["Corn"] = 4,
+        ["Cactus"] = 4,
+        ["Pineapple"] = 4,
+        ["Mushroom"] = 50,
+        ["Green Bean"] = 50,
+        ["Banana"] = 50,
+        ["Grape"] = 50,
+        ["Coconut"] = 50,
+        ["Mango"] = 50,
+        ["Dragon Fruit"] = 50,
+        ["Acorn"] = 50,
+        ["Cherry"] = 50,
+        ["Sunflower"] = 50,
+        ["Venus Fly Trap"] = 50,
+        ["Pomegranate"] = 50,
+        ["Poison Apple"] = 50,
+        ["Moon Bloom"] = 50,
+        ["Dragon's Breath"] = 50,
+    },
+
+    SELL_ALL_DELAY = 20,
+    EXPAND_PLOT = false,
+    BUY_GEAR = {},  -- ["Gear Name"] = Amount
+    BUY_CRATE = {},  -- ["Crate Name"] = Amount
+    USE_SPRINKLER = {},  -- "Sprinkler Name"
+
+    -- Auto Mail
+    AUTO_MAIL_USERNAME = {"baovagau123u"},  -- Username (Randomized)
+    AUTO_MAIL_ITEM_NAME = {"Bamboo Seed", "Rainbow Seed", "Gold Seed"},  -- ["Item Name"] = Amount
+    COLLECT_MAIL = true,
 
     -- Discord
-    WEBHOOK_ITEM_NAME = { "Aura Crate", "Cosmetic Crate" },
-    WEBHOOK_URL = "",
-    DISCORD_ID = "",
-    WEBHOOK_NOTE = "",
+    WEBHOOK_PET_NAME = {},
+    WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
+    DISCORD_ID = "473755357274046464",
+    WEBHOOK_NOTE = "Dew",  -- Private Webhook
     SHOW_PUBLIC_DISCORD_ID = true,
-    SHOW_WEBHOOK_USERNAME = true,
-    SHOW_WEBHOOK_JOBID = true,
+    SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
+    SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1c7ac2a2f86ecf894218a424a1be7667.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/c9ea3aa6c782de82dee4bcf6b9a9d03e.lua"))()
