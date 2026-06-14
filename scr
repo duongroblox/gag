@@ -1,3 +1,4 @@
+task.wait(3)
 getgenv().Config = {
     ["Planting"] = {
         ["Seeds To Plant"] = {
@@ -37,11 +38,11 @@ getgenv().Config = {
     ["Romanesco"]=35,
     ["Horned Melon"]=35,
 },
-        ["Auto Buy Seeds"]= true,
-        ["Auto Plant"]= true,
-        ["Auto Upgrade Crops"]= true,
-        ["Expand Garden"]= true,
-    	["Collect Seed Packs"]= true,
+        ["Auto Buy Seeds"]=true,
+        ["Auto Plant"]=true,
+        ["Auto Upgrade Crops"]=true,
+        ["Expand Garden"]=true,
+    ["Collect Seed Packs"]=true,
     },
 
     ["Harvest"] = {
@@ -55,16 +56,26 @@ getgenv().Config = {
     ["Gears"] = {
         ["Use Sprinklers"]=true,
         ["Use Watering Can"]=true,
+        ["Sprinkler Stack"]=4,
         ["Buy Gears"]=true,
-        ["Gears To Buy"]={},
-        ["Gears To Use"]={},
+        ["Gears To Buy"]={              -- sprinklers (growth + SIZE boost) + watering cans; buys the best affordable in stock
+            "Super Sprinkler", "Legendary Sprinkler", "Rare Sprinkler", "Uncommon Sprinkler", "Common Sprinkler",
+            "Super Watering Can", "Common Watering Can",
+        },
+        ["Gears To Use"]={              -- uses the best of these you own
+            "Super Sprinkler", "Legendary Sprinkler", "Rare Sprinkler", "Uncommon Sprinkler", "Common Sprinkler",
+            "Super Watering Can", "Common Watering Can",
+        },
     },
 
     ["Pets"] = {
         ["Enable"]=true,
         ["Buy Wild Pets"]=true,
         ["Equip Best Pets"]=true,
-        ["Open Eggs"]=false,
+        ["Open Eggs"]=true,            -- hatch any eggs you own into pets
+        ["Buy Pet Slots"]=true,        -- spend Sheckles on equip slots 4-6 (~200k / 1M / 5M)
+        ["Max Pet Slots"]=6, 
+        ["Unequip Others"]=false,           -- buy up to this many slots (game max is 6)
         ["Pets To Buy"]={
             "GoldenDragonfly",
             "Unicorn",
@@ -99,7 +110,7 @@ getgenv().Config = {
     ["Min Fruits To Send"]=10,
 
     ["Mail Seeds"]=true,
-    ["Seeds To Mail"]={"Bamboo Seed", "Rainbow Seed", "Gold Seed"},
+    ["Seeds To Mail"]={ "Bamboo Seed", "Rainbow Seed", "Gold Seed" },
 
     ["Mail Pets"]=true,
     ["Pets To Mail"]={
@@ -109,6 +120,12 @@ getgenv().Config = {
         "Monkey"
     },
 },
+
+    ["Money"] = {
+        ["Keep Money"]=0,              -- spend FLOOR: always keep this much (0 = reinvest everything)
+        ["Stop Buying Seeds At"]=0,    -- "save for pets": pause seed buying above this (0 = never)
+        ["Sell At Steven"]=false,      -- false = sell from anywhere (faster); true = walk to Steven
+    },
     ["Codes"] = {
         ["Auto Redeem"]=true,
         ["List"]={ "TEAMGREENBEAN" }
@@ -118,7 +135,7 @@ getgenv().Config = {
         ["Enabled"]=true,
         ["Your Discord ID"]="473755357274046464",
     ["Your Private Webhook"]="https://discord.com/api/webhooks/1246353354930651207/OIsCx9I2sXKRokSTvcAWbM121LUdAH13mOE8J5Erh8q-RQUzECGSS2Oixoi8x7Egl8Ky",
-        ["Only These"]={ "Mythic", "Super" }
+        ["Only These"]={ "Mythic", "Super", "Legendary" }
     },
 
     ["Anti AFK"] = {
