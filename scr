@@ -86,7 +86,7 @@ getgenv().GAG2Config = {
     USE_SPRINKLER = {},  -- "Sprinkler Name"
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {baovagau123u},  -- Username (Randomized)
+    AUTO_MAIL_USERNAME = {"baovagau123u"},  -- Username (Randomized)
     AUTO_MAIL_ITEM_NAME = {"Bamboo Seed", "Rainbow Seed", "Gold Seed"},  -- ["Item Name"] = Amount
     COLLECT_MAIL = true,
 
