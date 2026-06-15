@@ -105,7 +105,7 @@ getgenv().UserConfig = {
     ["Discord ID"] = "473755357274046464",
     ["Mail To Username"] = {"baovagau123u"},
     ["Items To Mail"] = {
-        ["Pet"] = {"Golden Dragonfly","Unicorn","Raccoon"},
+        ["Pet"] = {"Golden Dragonfly","Unicorn","Raccoon", "Robin","Monkey","Bee"},
         ["Seed"] = {"Rainbow", "Gold", "Bamboo", "Mushroom"},
     },
     ["Claim Mail"] = true,
