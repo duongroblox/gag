@@ -120,7 +120,7 @@ getgenv().UserConfig = {
             ["Rainbow"] = 2,
             ["Gold"] = 5,
             ["Bamboo"] = 300,
-            ["Mushroom"] = 100,
+            ["Mushroom"] = 5,
         },
     },
     ["Claim Mail"] = true,
