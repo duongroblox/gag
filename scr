@@ -104,21 +104,21 @@ getgenv().UserConfig = {
     ["Mail To Username"] = {"TraceQuentinhg27"},
         ["Items To Mail"] = {
             ["Pet"] = {
-                ["Golden Dragonfly"] = {All = 100, To = "KaneKynlee2569"}, -- tất cả loại
-                ["Unicorn"] = {All = 100, To = "KaneKynlee2569"}, -- chỉ gửi 9 Huge, 9 Rainbow (không gửi pet Normal, Big),
-                ["Raccoon"] = {All =  100, To = "KaneKynlee2569"}, -- chỉ gửi 5 Normal, 9 Big, 9 Huge, 9 Rainbow
-                ["Monkey"] = {All =  100, To = "KaneKynlee2569"}, -- tất cả loại, nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
-                ["Bee"] = {All =  5, To = "KaneKynlee2569"}, -- tất cả loại,  nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
-                ["Ice Serpent"] = {All =  100, To = "KaneKynlee2569"}, -- tất cả loại,  nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+                ["Golden Dragonfly"] = {All = 100, To = "KaneKynlee2569"},
+                ["Unicorn"] = {All = 100, To = "KaneKynlee2569"},
+                ["Raccoon"] = {All =  100, To = "KaneKynlee2569"},
+                ["Monkey"] = {All =  100, To = "KaneKynlee2569"},
+                ["Bee"] = {All =  5, To = "KaneKynlee2569"},
+                ["Ice Serpent"] = {All =  100, To = "KaneKynlee2569"},
             },
             ["Seed"] = {
                 ["Rainbow"] = {Amount = 1, To = "TraceQuentinhg27"},
-                ["Gold"] = 1, -- nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
-                ["Bamboo"] = 300, -- nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
-                ["Mushroom"] = 5, -- nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+                ["Gold"] = 1,
+                ["Bamboo"] = 300,
+                ["Mushroom"] = 5,
             },
             ["Gear"] = {
-                ["Super Sprinkler"] = 1, -- nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+                ["Super Sprinkler"] = 1,
                 ["Super Watering Can"] = {Amount = 1, To = "TraceQuentinhg27"}, 
             },
        },
