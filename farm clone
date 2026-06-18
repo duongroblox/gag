@@ -4,19 +4,19 @@ getgenv().UserConfig = {
     ["Auto Buy Seed"] = true,
     ["Auto Plant Seed"] = true,
     ["Limit Plant Seed"] = { -- ["Plant Name"] = Amount
-        ["Carrot"] = 10, 
-        ["Strawberry"] = 10,
-        ["Blueberry"] = 10,
-        ["Tulip"] = 10,
-        ["Tomato"] = 10,
-        ["Apple"] = 10,
-        ["Bamboo"] = 0,
-        ["Corn"] = 10,
-        ["Cactus"] = 10,
-        ["Pineangle"] = 10,
-        ["Mushroom"] = 20,
-        ["Green Bean"] = 20,
-        ["Banana"] = 20,
+        ["Carrot"] = 500, 
+        ["Strawberry"] = 1,
+        ["Blueberry"] = 1,
+        ["Tulip"] = 500,
+        ["Tomato"] = 1,
+        ["Apple"] = 1,
+        ["Bamboo"] = 10,
+        ["Corn"] = 1,
+        ["Cactus"] = 1,
+        ["Pineangle"] = 1,
+        ["Mushroom"] = 0,
+        ["Green Bean"] = 1,
+        ["Banana"] = 2,
         ["Grape"] = 20,
         ["Coconut"] = 20,
         ["Mango"] = 20,
@@ -32,11 +32,11 @@ getgenv().UserConfig = {
     },
     ["Limit Buy Seed"] = { -- ["Seed Name"] = Amount
         ["Carrot"] = 99, 
-        ["Strawberry"] = 99,
-        ["Blueberry"] = 99,
+        ["Strawberry"] = 1,
+        ["Blueberry"] = 1,
         ["Tulip"] = 99,
-        ["Tomato"] = 99,
-        ["Apple"] = 99,
+        ["Tomato"] = 1,
+        ["Apple"] = 1,
         ["Bamboo"] = 999,
         ["Corn"] = 99,
         ["Cactus"] = 99,
@@ -70,8 +70,6 @@ getgenv().UserConfig = {
         ["Deer"] = 5,
     },
     ["Equip Pets"] = { -- {"Pet Name", Amount To Equip, Priority}
-        {"Unicorn", 5, 1},
-        {"Golden Dragonfly", 10, 2},
         {"Deer", 5, 3},
     },
     ["Expand Plot"] = true,
@@ -103,11 +101,29 @@ getgenv().UserConfig = {
     ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
     ["Webhook Note"] = "dew",
     ["Discord ID"] = "473755357274046464",
-    ["Mail To Username"] = {"baovagau123u"},
-    ["Items To Mail"] = {
-        ["Pet"] = {"Golden Dragonfly","Unicorn","Raccoon"},
-        ["Seed"] = {"Rainbow", "Gold", "Bamboo", "Mushroom"},
-    },
+    ["Mail To Username"] = {"TraceQuentinhg27"},
+        ["Items To Mail"] = {
+            ["Pet"] = {
+                ["Golden Dragonfly"] = {All = 100, To = "KaneKynlee2569"}, -- tất cả loại
+                ["Unicorn"] = {All = 100, To = "KaneKynlee2569"}, -- chỉ gửi 9 Huge, 9 Rainbow (không gửi pet Normal, Big),
+                ["Raccoon"] = {All =  100, To = "KaneKynlee2569"}, -- chỉ gửi 5 Normal, 9 Big, 9 Huge, 9 Rainbow
+                ["Monkey"] = {All =  100, To = "KaneKynlee2569"}, -- tất cả loại, nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+                ["Bee"] = {All =  5, To = "KaneKynlee2569"}, -- tất cả loại,  nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+                ["Ice Serpent"] = {All =  100, To = "KaneKynlee2569"}, -- tất cả loại,  nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+            },
+            ["Seed"] = {
+                ["Rainbow"] = {Amount = 1, To = "TraceQuentinhg27"},
+                ["Gold"] = 1, -- nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+                ["Bamboo"] = 300, -- nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+                ["Mushroom"] = 5, -- nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+            },
+            ["Gear"] = {
+                ["Super Sprinkler"] = 1, -- nếu không set tên thì mặc định gửi mail qua username ở "Mail To Username"
+                ["Super Watering Can"] = {Amount = 1, To = "TraceQuentinhg27"}, 
+            },
     ["Claim Mail"] = true,
+    ["Auto Plant"] = true,
+    ["Limit Auto Plant"] = 600,
+    ["Blacklist Seed"] = {"Rainbow", "Gold", "Mushroom"}
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66adeacbfb46c0ea4883aefee367292a.lua"))()
