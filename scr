@@ -60,7 +60,6 @@ getgenv().UserConfig = {
     ["Favorite"] = {},
     ["Buy Pets"] = { -- ["Pet Name"] = Amount
         ["Monkey"] = 5,
-        ["Bee"] = 5,
         ["Black Dragon"] = 99,
         ["Golden Dragonfly"] = 99,
         ["Unicorn"] = 99,
