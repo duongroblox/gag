@@ -8,7 +8,7 @@ getgenv().UserConfig = {
         ["Carrot"] = 200, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
-        ["Tulip"] = 10,
+        ["Tulip"] = 200,
         ["Tomato"] = 10,
         ["Apple"] = 10,
         ["Bamboo"] = 100,
@@ -35,7 +35,7 @@ getgenv().UserConfig = {
         ["Carrot"] = 500, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
-        ["Tulip"] = 10,
+        ["Tulip"] = 500,
         ["Tomato"] = 10,
         ["Apple"] = 10,
         ["Bamboo"] = 9999,
@@ -125,7 +125,7 @@ getgenv().UserConfig = {
     },
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
-    ["Limit Auto Plant"] = 400,
+    ["Limit Auto Plant"] = 600,
     ["Blacklist Seed"] = {"Rainbow", "Gold", "Mushroom"}
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66adeacbfb46c0ea4883aefee367292a.lua"))()
