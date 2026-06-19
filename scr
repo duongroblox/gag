@@ -100,7 +100,7 @@ getgenv().UserConfig = {
     ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
     ["Webhook Note"] = "dew",
     ["Discord ID"] = "473755357274046464",
-    ["Mail To Username"] = {"TraceQuentinhg27"},
+    ["Mail To Username"] = {"LelandKhloec15"},
         ["Items To Mail"] = {
             ["Pet"] = {
                 ["Golden Dragonfly"] = {All = 1, To = "KaneKynlee2569"},
@@ -111,14 +111,14 @@ getgenv().UserConfig = {
                 ["Ice Serpent"] = {All =  1, To = "KaneKynlee2569"},
             },
             ["Seed"] = {
-                ["Rainbow"] = {Amount = 1, To = "TraceQuentinhg27"},
+                ["Rainbow"] = {Amount = 1, To = "LelandKhloec15"},
                 ["Gold"] = 1,
                 ["Bamboo"] = 300,
                 ["Mushroom"] = 5,
             },
             ["Gear"] = {
                 ["Super Sprinkler"] = 1,
-                ["Super Watering Can"] = {Amount = 1, To = "TraceQuentinhg27"}, 
+                ["Super Watering Can"] = {Amount = 1, To = "LelandKhloec15"}, 
             },
        },
     ["Claim Mail"] = true,
