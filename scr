@@ -5,6 +5,7 @@ getgenv().UserConfig = {
     ["Auto Plant Seed"] = true,
     ["Limit Plant Seed"] = { -- ["Plant Name"] = Amount
         ["Carrot"] = 500, 
+        ["Gold"] = 100, 
         ["Strawberry"] = 20,
         ["Blueberry"] = 20,
         ["Tulip"] = 500,
@@ -123,6 +124,6 @@ getgenv().UserConfig = {
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
     ["Limit Auto Plant"] = 600,
-    ["Blacklist Seed"] = {"Rainbow", "Gold", "Mushroom"}
+    ["Blacklist Seed"] = {"Rainbow", "Mushroom"}
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66adeacbfb46c0ea4883aefee367292a.lua"))()
