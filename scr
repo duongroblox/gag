@@ -82,8 +82,8 @@ getgenv().UserConfig = {
             "Uncommon Sprinkler",
             "Rare Sprinkler",
             "Legendary Sprinkler",
-            --"Super Sprinkler",
-            --"Super Watering Can",
+            "Super Sprinkler",
+            "Super Watering Can",
         },
         ["Gears To Use"] = {
             -- "Common Watering Can",
@@ -112,7 +112,6 @@ getgenv().UserConfig = {
             },
             ["Seed"] = {
                 ["Rainbow"] = {Amount = 1, To = "LelandKhloec15"},
-                ["Gold"] = 1,
                 ["Bamboo"] = 300,
                 ["Mushroom"] = 5,
             },
