@@ -107,7 +107,7 @@ getgenv().UserConfig = {
     ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
     ["Webhook Note"] = "dew",
     ["Discord ID"] = "473755357274046464",
-    ["Mail To Username"] = {"LelandKhloec15"},
+    ["Mail To Username"] = {""},
         ["Items To Mail"] = {
             ["Pet"] = {
                 ["Golden Dragonfly"] = {All = 1, To = ""},
