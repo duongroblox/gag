@@ -55,6 +55,7 @@ getgenv().UserConfig = {
         --["Venus Fly Trap"] = 5,
         --["Pomegranate"] = 5,
         --["Poison Apple"] = 5,
+        ["Venom Spitter"] = 50,
         --["Moon Bloom"] = 5,
         --["Dragon's Breath"] = 5,
     },
@@ -64,12 +65,16 @@ getgenv().UserConfig = {
         ["Black Dragon"] = 99,
         ["Golden Dragonfly"] = 99,
         ["Unicorn"] = 99,
+        ["Bear"] = 99,
         ["Raccoon"] = 99,
         ["Ice Serpent"] = 99,
+        ["Black Dragon"] = 99,
         ["Deer"] = 5,
+        ["Bunny"] = 5,
     },
     ["Equip Pets"] = { -- {"Pet Name", Amount To Equip, Priority}
-        {"Deer", 5, 3},
+        {"Deer", 3, 1},
+        {"Bunny", 3, 2},
     },
     ["Expand Plot"] = true,
     ["Plot Expansions"] = 4, -- Max = 5
@@ -100,7 +105,7 @@ getgenv().UserConfig = {
     ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
     ["Webhook Note"] = "dew",
     ["Discord ID"] = "473755357274046464",
-    ["Mail To Username"] = {""},
+    ["Mail To Username"] = {"LelandKhloec15"},
         ["Items To Mail"] = {
             ["Pet"] = {
                 ["Golden Dragonfly"] = {All = 1, To = ""},
