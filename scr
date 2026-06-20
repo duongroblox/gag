@@ -113,6 +113,7 @@ getgenv().UserConfig = {
                 ["Raccoon"] = {All =  1, To = ""},
                 ["Monkey"] = {All =  1, To = ""},
                 ["Bee"] = {All =  5, To = ""},
+                ["Bear"] = {All =  1, To = ""},
                 ["Ice Serpent"] = {All =  1, To = ""},
             },
             ["Seed"] = {
