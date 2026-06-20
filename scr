@@ -1,8 +1,6 @@
 setfpscap(5)
 script_key="gPZjZwFawdJXpgJdOmTAinhKYjtTIUgU";
 getgenv().UserConfig = {
-    ["Auto Double Or Nothing"] = true, -- muốn chơi tài xỉu thì true
-    ["Double Or Nothing Target Wins"] = 3,
     ["Auto Buy Seed"] = true,
     ["Auto Plant Seed"] = true,
     ["Limit Plant Seed"] = { -- ["Plant Name"] = Amount
@@ -88,7 +86,7 @@ getgenv().UserConfig = {
             --"Common Sprinkler",
             --"Uncommon Sprinkler",
             --"Rare Sprinkler",
-            "Legendary Sprinkler",
+            --"Legendary Sprinkler",
             "Super Sprinkler",
             "Super Watering Can",
         },
