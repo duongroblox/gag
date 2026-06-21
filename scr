@@ -73,8 +73,7 @@ getgenv().UserConfig = {
         ["Bunny"] = 5,
     },
     ["Equip Pets"] = { -- {"Pet Name", Amount To Equip, Priority}
-        {"Deer", 3, 1},
-        {"Bunny", 3, 2},
+        {"Deer", 6, 1},
     },
     ["Expand Plot"] = true,
     ["Plot Expansions"] = 5, -- Max = 5
