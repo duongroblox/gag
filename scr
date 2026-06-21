@@ -108,21 +108,21 @@ getgenv().UserConfig = {
         ["Items To Mail"] = {
             ["Pet"] = {
                 ["Golden Dragonfly"] = {All = 1, To = ""},
-                ["Unicorn"] = {All = 1, To = ""},
-                ["Raccoon"] = {All =  1, To = ""},
+                ["Unicorn"] = {All = 1, To = "Torirt68"},
+                ["Raccoon"] = {All =  1, To = "Torirt68"},
                 ["Monkey"] = {All =  1, To = ""},
                 ["Bee"] = {All =  5, To = ""},
                 ["Bear"] = {All =  1, To = ""},
                 ["Ice Serpent"] = {All =  1, To = ""},
             },
             ["Seed"] = {
-                ["Rainbow"] = {Amount = 1, To = ""},
+                ["Rainbow"] = {Amount = 1, To = "Torirt68"},
                 ["Bamboo"] = 300,
                 ["Mushroom"] = 5,
             },
             ["Gear"] = {
-                ["Super Sprinkler"] = 1,
-                ["Super Watering Can"] = {Amount = 1, To = ""}, 
+                ["Super Sprinkler"] = {Amount = 1, To = "Torirt68"},
+                ["Super Watering Can"] = {Amount = 1, To = "Torirt68"}, 
                 ["Legendary Sprinkler"] = 1,
             },
        },
