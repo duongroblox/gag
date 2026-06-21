@@ -76,7 +76,7 @@ getgenv().UserConfig = {
         {"Deer", 6, 1},
     },
     ["Expand Plot"] = true,
-    ["Plot Expansions"] = 5, -- Max = 5
+    ["Plot Expansions"] = 6, -- Max = 5
     ["Unlock Pet Slots"] = 6, -- Max = 6
     ["Auto Collect Seed Packs"] = true,
     ["Gears"] = {
