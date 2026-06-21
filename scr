@@ -128,7 +128,7 @@ getgenv().UserConfig = {
             },
        },
     ["Claim Mail"] = true,
-    ["Auto Plant"] = false,
+    ["Auto Plant"] = true,
     ["Limit Auto Plant"] = 1000,
     ["Blacklist Seed"] = {"Rainbow", "Mushroom"}
 }
